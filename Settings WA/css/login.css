@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+#login {
+	height: 750px;
+}
+#login  {
+}
+#login .col-fixed {
+	float: left;
+	height: 100%;
+}
+#login-feature  {
+	width: 400px;
+	background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.40) 100%,rgba(255,255,255,1.00) 100%), url(../assets/ep.img5.jpg);
+	background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.40) 100%,rgba(255,255,255,1.00) 100%), url(../assets/ep.img5.jpg);
+	background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.40) 100%,rgba(255,255,255,1.00) 100%), url(../assets/ep.img5.jpg);
+	background-image: linear-gradient(180deg,rgba(0,0,0,0.40) 100%,rgba(255,255,255,1.00) 100%), url(../assets/ep.img5.jpg);
+	background-repeat: no-repeat;
+	background-size: 749px 900px;
+	background-position: 30% 0%;
+	height: 900px;
+}
+#login-feature img  {
+	height: 51px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#login-main .form {
+	padding-top: 225px;
+	padding-right: 0px;
+	padding-left: 0px;
+	vertical-align: middle;
+}
+#login-main .form-header  {
+	margin-top: 0px;
+}
+#login-main .form-header img {
+	margin-bottom: 48px;
+}
+#login-main .form-body  {
+	margin-top: 85px;
+	clear: both;
+}
+#login-main .form-field  {
+	margin-top: 11px;
+	height: auto;
+	clear: both;
+}
+#login-main .form-field label {
+	float: left;
+	font-size: 16px;
+}
+#login-main .form-field a {
+	float: right;
+}
+#login-main .form-field input  {
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgba(58,71,82,1.00);
+	border-top: none;
+	margin-bottom: 10px;
+	outline: none;
+	padding-bottom: 5px;
+	font-size: 16px;
+}
+#login-main input:focus  {
+	border-bottom: 1px solid rgba(3,156,232,1.00);
+}
+#login-main .form-footer {
+	margin-top: 50px;
+}
+@media screen and (min-width:460px) and (max-width:949px){
+
+#login-main .form {
+	padding-top: 125px;
+	padding-right: 0px;
+	padding-left: 0px;
+	vertical-align: middle;
+}
+}
+@media screen and (max-width:459px) {
+	#login-main .form {
+	padding-top: 59px;
+	padding-right: 0px;
+	padding-left: 0px;
+	vertical-align: middle;
+}
+}
+
