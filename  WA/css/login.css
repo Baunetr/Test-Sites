@@ -3,8 +3,6 @@
 #login {
 	height: 750px;
 }
-#login  {
-}
 #login .col-fixed {
 	float: left;
 	height: 100%;
@@ -86,4 +84,3 @@
 	vertical-align: middle;
 }
 }
-
