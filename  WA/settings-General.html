@@ -7,7 +7,6 @@
 <title>settings.html</title>
 <style> 
 @import url("../epMarketing/css/bootstrap-3.3.7.css");
-@import url("../epMarketing/css/style.css");
 .extra-small {
 }
 </style>
@@ -15,7 +14,6 @@
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
-<link href="../../epMarketing/css/style.css" rel="stylesheet" type="text/css">
 <link href="css/settings.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <!-- <script src="jQueryAssets/jquery-1.11.1.min.js"></script> -->
@@ -50,20 +48,10 @@
     <h3 class="col-xs-7">My Settings</h3>
     <h5 class="btn btn-primary col-xs-5">Change Password</h5>
   </div>
-<div class="table-responsive col-xs-12">
+<div class="col-xs-12">
         <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>First Name: <span class="orange">*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input placeholder="Enter Name"></td>
-              </tr>
-            </tbody>
-          </table>
+          <label>First Name: <span class="orange">*</span></label>
+          <input type="text" placeholder="Enter Name">
         </div>
         <div class="col-sm-6">
           <table class="table">
@@ -83,7 +71,8 @@
           <table class="table">
             <thead>
               <tr>
-                <th>Email Address: <span class="orange">*</span></th>
+                <th>
+                Email Address: <span class="orange">*</span></th>
               </tr>
             </thead>
             <tbody>

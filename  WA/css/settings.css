@@ -9,7 +9,25 @@ input  {
 	outline: none;
 	padding-bottom: 5px;
 	font-size: 14px;
+	padding-top: 0px;
 }
 input:focus  {
 	border-bottom: 1px solid rgba(3,156,232,1.00);
+}
+.input-group   {
+	border-style: none;
+	border-width: 0px;
+}
+
+input .form-control		{
+	width: 100%;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgba(58,71,82,1.00);
+	border-top: none;
+	margin-bottom: 10px;
+	outline: none;
+	padding-bottom: 5px;
+	font-size: 14px;
+	padding-top: 0px;
 }
