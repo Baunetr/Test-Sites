@@ -1,15 +1,25 @@
 @charset "UTF-8";
+.side-nav {
+	height: 100%;
+}
 input  {
 	width: 100%;
 	border-left: none;
 	border-right: none;
 	border-bottom: 1px solid rgba(58,71,82,1.00);
 	border-top: none;
-	margin-bottom: 10px;
 	outline: none;
 	padding-bottom: 5px;
 	font-size: 14px;
 	padding-top: 0px;
+}
+.field-data {
+	width: 100%;
+	outline: none;
+	font-size: 14px;
+}
+.form-field label {
+	width: 100%;
 }
 input:focus  {
 	border-bottom: 1px solid rgba(3,156,232,1.00);
@@ -30,4 +40,18 @@ input .form-control		{
 	padding-bottom: 5px;
 	font-size: 14px;
 	padding-top: 0px;
+}
+.form-field {
+	padding: 10px 10px;
+}
+.content-row {
+	background-color: rgba(244,243,243,1.00);
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	padding-top: 4px;
+	margin-left: 0px;
+}
+.my-settings-content .content-row
+  {
+	margin-top: 15px;
 }

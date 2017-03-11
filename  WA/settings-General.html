@@ -9,6 +9,10 @@
 @import url("../epMarketing/css/bootstrap-3.3.7.css");
 .extra-small {
 }
+.bt-sm {
+}
+.col-xs- {
+}
 </style>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -31,249 +35,125 @@
 
 <body id="my-profile">
 <div class="container-fluid">
-  <div class="row-content">
-  <!--Hamberger Menu-->
-  
-  	<!--My profile selections-->
-    <div class="col-sm-3 sidenav">
-      <h3 class="text-bold">My Profile</h3>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#">User Settings</a></li>
-        <li><a href="#">Expense Policies</a></li>
-        <li><a href="#">Credit Cards</a></li>
-      </ul>
+  <div class="col-xs-12 row">
+    <div class="col-sm-3 row side-nav">
+      <div class="col-sm-12 side-nav">
+        <h3 class="text-bold">My Profile</h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">User Settings</a></li>
+          <li><a href="#">Expense Policies</a></li>
+          <li><a href="#">Credit Cards</a></li>
+        </ul>
+      </div>
     </div>
-<div class="col-sm-9 my-content">
-  <div class="col-xs-12">
-    <h3 class="col-xs-7">My Settings</h3>
-    <h5 class="btn btn-primary col-xs-5">Change Password</h5>
-  </div>
-<div class="col-xs-12">
-        <div class="col-sm-6">
-          <label>First Name: <span class="orange">*</span></label>
-          <input type="text" placeholder="Enter Name">
+    <div class="col-sm-9">
+      <div class="my-settings-content">
+        <div class="col-xs-12
+  content-row row">
+          <div class="col-xs-12">
+            <h3 class="col-sm-7">My Settings</h3>
+            <h5 class="btn btn-primary col-xs-10 col-xs-offset-1 col-sm-3 btn-sm col-sm-offset-1">Change Password</h5>
+          </div>
+          <div class="col-xs-12">
+            <div class="col-sm-6 form-field">
+              <label>First Name: <span class="orange">*</span></label>
+              <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Last Name: <span class="orange">*</span> </label>
+              <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Email Address: <span class="orange">*</span> </label>
+              <p class="field-data">baunetr@expensepath.com</p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Alt Email Address's: <span class="glyphicon glyphicon-info-sign small"></span><span class="glyphicon glyphicon-plus-sign glyphicon-align-right" style="float:right"></span></label>
+              <p class="field-data">baunetr@gmail.com <span class="glyphicon glyphicon-trash" style="float:right"></span></p>
+              <p class="field-data">baunetr@hotmail.com <span class="glyphicon glyphicon-trash" style="float:right"></span></p>
+              <p class="field-data">baunetr@yahoo.com <span class="glyphicon glyphicon-trash" style="float:right"></span></p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>City:</label>
+              <p class="field-data">Portland</p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Zip Code:</label>
+              <p class="field-data">97140</p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>State/Province:</label>
+              <p class="field-data">Oregon</p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Country: <span class="orange">*</span></label>
+              <p class="field-data">Oregon</p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Time Zone:</label>
+              <select class="col-sm-12" id="sel1">
+                <option>Pacific Time Zone</option>
+                <option>Mountain Time Zone</option>
+                <option>Central Time Zone</option>
+                <option>Eastern Time Zone</option>
+                <option>Alaskan Time Zone</option>
+                <option>Hawaiian Time Zone</option>
+              </select>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Currency: </label>
+              <p class="field-data">USD</p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Approval Athorization: </label>
+              <p class="field-data">$0.00</p>
+            </div>
+            <div class="col-sm-6 form-field">
+              <label>Distance to Office: <span class="glyphicon glyphicon-info-sign small"></span></label>
+              <input type="text" placeholder="15.7 miles">
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <button class="col-xs-10 col-xs-offset-1 col-sm-3 btn btn-primary col-sm-offset-8 btn-sm">Save Changes</button>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Last Name: <span class="orange">*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Baune</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>
-                Email Address: <span class="orange">*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>baunetr@expensepath.com</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Alt Email Address's:<span class="glyphicon glyphicon-plus-sign" style="float:right"></span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>baunetr@gmail.com <span class="glyphicon glyphicon-trash" style="float:right"></span></td>
-              </tr>
-              <tr>
-                <td>baunetr@hotmail.com <span class="glyphicon glyphicon-trash" style="float:right"></span></td>
-              </tr>
-              <tr>
-                <td>baunetr@yahoo.com <span class="glyphicon glyphicon-trash" style="float:right"></span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>City:</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Portland</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Zip Code:</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>97214</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>State/Province:</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Oregon</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Country: <span class="orange">*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Oregon</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Time Zone:</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><select class="col-sm-12" id="sel1">
-                  <option>Pacific Time Zone</option>
-                  <option>Mountain Time Zone</option>
-                  <option>Central Time Zone</option>
-                  <option>Eastern Time Zone</option>
-                  <option>Alaskan Time Zone</option>
-                  <option>Hawaiian Time Zone</option>
-                </select></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-<table class="table">
-            <thead>
-              <tr>
-                <th>Currency:</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>USD</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Approval Athorization:</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>$0.00</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-  </div>
-      <div class="col-xs-12">
-        <button class="col-xs-4 btn btn-primary col-xs-offset-7">Save Changes</button>
       </div>
-      <div class="col-xs-12">
-        <h3>Deligations<span class="glyphicon glyphicon-info-sign small"></span></h3>
+      <div class="my-deligations-content">
+        <div class=" col-xs-12 content-row row">
+          <div class="col-xs-12">
+            <h3>Deligations <span class="glyphicon glyphicon-info-sign small"></span></h3>
+          </div>
+          <div class="col-sm-6 form-field">
+            <label>From: <span class="orange">*</span> </label>
+            <input type="date" placeholder="enter date">
+          </div>
+          <div class="col-sm-6 form-field">
+            <label>To: <span class="orange">*</span></label>
+            <input type="date" placeholder="enter date">
+          </div>
+          <div class="col-sm-6 from-field">
+            <label>Deligate to: <span class="orange">*</span> </label>
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="col-sm-6 form-field">
+            <label>Status:</label>
+            <div class="row">
+              <div class="col-xs-6">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">
+                  Active </label>
+              </div>
+              <div class="col-xs-6">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">
+                  Inactive </label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>From: <span class="orange">*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Date</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>To: <span class="orange">*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Date</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Deligate to: <span class="orange">*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Status:</th>
-              </tr>
-             </thead>
-            <tbody>
-              <tr>
-                <td><label class="radio-inline col-xs-6"><input type="radio" name="optradio">Active</label></td>
-                <td><label class="radio-inline col-xs-6"><input type="radio" name="optradio">Inactive</label></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-</div>
-</div>
-<!--Setting content feilds-->  
+    </div>
+  </div>
 </div>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript">
