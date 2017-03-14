@@ -78,3 +78,8 @@ keygen , select{
 	/* [disabled]border-collapse: collapse; */
 	/* [disabled]border-style: none; */
 }
+#my-policies {
+}
+td:nth-child(even) {
+	background-color: #F7f8f9;
+}
