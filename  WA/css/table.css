@@ -1,20 +1,28 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.table-hero {
+	background-color: #bac3d4;
+}
+
 td:nth-child(even) {
-	background-color: #F7f8f9;
+	background-color: #e1e5ed;
 }
 th {
 	border-bottom: 2px solid #CBC3C7;
-    background-color: #f7f8f9;
+    background-color: #e1e5ed;
+	padding: 4px 8px
 }
 .section-header {
 	background-color: #7B8188;
 }
 td {
-	padding: 4px 
+	padding: 4px 8px;
+	border-style: none;	
 	
 }
 td.amount {
     color: #ff7732;
+}#my-profile {
+	background-color: #FBFBFC;
 }
