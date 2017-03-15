@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+
+td:nth-child(even) {
+	background-color: #F7f8f9;
+}
+th {
+	border-bottom: 2px solid #CBC3C7;
+    background-color: #f7f8f9;
+}
+.section-header {
+	background-color: #7B8188;
+}
+td {
+	padding: 4px 
+	
+}
+td.amount {
+    color: #ff7732;
+}
