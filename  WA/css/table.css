@@ -64,9 +64,13 @@ td.amount {
 	font-variant: normal;
 }
 .filter {
-	padding-top: 4px;
-	padding-bottom: 8px;
+	padding-bottom: 10px;
+	padding-top: 0px;
 }
 .filter:hover {
 	color: #039CE8;
+}
+#search-text {
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
