@@ -23,14 +23,14 @@ th {
 	border-bottom-color: #BAC3D4;	
 }
 th:hover {
-	background-color: #D6D8DC;
+	background-color: #E0DFDF;
 }
 tr {
 	border-bottom: 1px solid #BAC3D4;
 	padding: 4px 8px;
 }
 tr:hover {
-	background-color: #D6D8DC;
+	background-color: #E0DFDF;
 }
 tr:hover td:nth-child(even) {
 	background-color: transparent;
