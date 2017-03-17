@@ -11,6 +11,8 @@ table {
 	border-bottom: 1px none #BAC3D4;
 	border-top: 1px solid #BAC3D4;
 	margin-top: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 tbody {
 	
