@@ -36,8 +36,8 @@
 <body id="my-profile">
 <div class="container-fluid">
   <div class="col-xs-12 row">
-    <div class="col-sm-3">
-      <div class="col-sm-12 side-nav">
+<div class="col-sm-3">
+    <div class="col-sm-12 side-nav">
         <h3 class="text-bold">My Profile</h3>
         <ul class="nav nav-pills nav-stacked">
           <li class="active"><a href="#">User Settings</a></li>
@@ -55,35 +55,44 @@
           <input type="text" class="form-control" placeholder="SEARCH:    ID / TITLE ...">
           <span class="input-group-btn">
             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-            </span> </div>
-        </div>
+          </span></div>
+      </div>
       <!-- /.col-sm-6 -->
       <h4><span class="glyphicon glyphicon-filter glyphicon-align-right filter" style="float:right"></span></h4>
+    </div>
+    <div class="table-filter">
+      <div class="col-md-6 filter-field row">
+        <h5>DATE</h5>
+        <div class="row">
+          <div class="col-md-6">
+            <label>From: <span class="orange">*</span></label>
+            <input type="date" placeholder="enter date">
+          </div>
+          <div class="col-md-6">
+            <label>To: <span class="orange">*</span></label>
+            <input type="date" placeholder="enter date">
+          </div>
+        </div>
       </div>
-    <div class="col-sm-12 table-filter">
-      <div class="col-sm-6">
+      <!--<div class="col-sm-6">
         <div class="input-group"><span class="input-group-btn">
           <button class="btn btn-default" type="button">FROM:</button>
           </span>
           <input type="text" class="form-control" placeholder="mm/dd/yyyy">
-          </div>
-        <!-- /input-group -->
         </div>
+        
+      </div>
       <div class="col-sm-6 row">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="mm/dd/yyyy">
           <span class="input-group-btn">
             <button class="btn btn-default" type="button">TO:</button>
-            </span></div>
-        <!-- /input-group -->
-        </div>
-      </input>
-      <!-- /.col-sm-6 -->
-      <!-- /.col-sm-6 -->
+          </span></div>
       </div>
+    </div>-->
+    </div>
   </div>
 </div>
-
 <div class="col-sm-12 table-responsive">
   <table width="100%" border="1">
     <tbody>
@@ -131,7 +140,6 @@
       </tr>
     </tbody>
   </table>
-</div>
 </div>
 </div>
 </div>
