@@ -35,8 +35,7 @@
 
 <body id="my-profile">
 <div class="container-fluid">
-  <div class="col-xs-12 row">
-<div class="col-sm-3">
+<!--<div class="col-sm-3">
     <div class="col-sm-12 side-nav">
         <h3 class="text-bold">My Profile</h3>
         <ul class="nav nav-pills nav-stacked">
@@ -45,8 +44,7 @@
           <li><a href="#">Credit Cards</a></li>
         </ul>
       </div>
-    </div>
-    <div class="col-sm-9">
+    </div>-->
 <div class="col-sm-12">
   <div class="col-sm-12 table-hero">
     <div class="col-sm-12">
@@ -54,26 +52,36 @@
         <div class="input-group input-group-sm row">
           <input type="text" class="form-control" placeholder="SEARCH:    ID / TITLE ...">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-          </span></div>
+          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+        </span></div>
       </div>
       <!-- /.col-sm-6 -->
       <h4><span class="glyphicon glyphicon-filter glyphicon-align-right filter" style="float:right"></span></h4>
     </div>
     <div class="table-filter">
-      <div class="col-md-6 filter-field row">
-        <h5>DATE</h5>
+      <div class="col-md-4 col-sm-6 filter-field">
+        <h5 class="text-center">DATE RANGE:</h5>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12 form-field">
             <label>From: <span class="orange">*</span></label>
             <input type="date" placeholder="enter date">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-12 form-field">
             <label>To: <span class="orange">*</span></label>
             <input type="date" placeholder="enter date">
           </div>
         </div>
       </div>
+      <div class="col-md-8 col-sm-6 filter-field">
+  <h5 class="text-center">STATUS:</h5>
+  <div id="selectable" class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default">WITH OWNER</a>
+    <a href="#" class="btn btn-default">IN REVIEW</a>
+    <a href="#" class="btn btn-default">FULLY APPROVED</a>
+    <a href="#" class="btn btn-default">EXPORTED</a>
+    <a href="#" class="btn btn-default">PAID</a>
+  </div>
+        </div>
       <!--<div class="col-sm-6">
         <div class="input-group"><span class="input-group-btn">
           <button class="btn btn-default" type="button">FROM:</button>
@@ -140,8 +148,6 @@
       </tr>
     </tbody>
   </table>
-</div>
-</div>
 </div>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript">

@@ -3,6 +3,7 @@
 
 .form-field label {
 	width: 100%;
+	font-size: .9em;
 }
 input  {
 	width: 100%;
@@ -111,6 +112,16 @@ td.amount {
 filter-field {
 	padding: 10px 10px;
 }
+.filter-field h5  {
+	font-size: 0.85em;
+}
+.filter-field label {
+	font-size: 0.85em;
+}
 .float-r {
 	float: right;
 }
+.table-filter a {
+	font-size: 0.65em;
+}
+
