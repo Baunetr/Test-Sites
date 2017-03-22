@@ -6,15 +6,16 @@
 }
 input  {
 	width: 100%;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px solid rgba(58,71,82,1.00);
-	border-top: none;
-	outline: none;
+	/* [disabled]border-left: none; */
+	/* [disabled]border-right: none; */
+	/* [disabled]border-bottom: 1px solid rgba(131,131,131,1.00); */
+	/* [disabled]border-top: none; */
+	/* [disabled]outline: none; */
 	padding-bottom: 5px;
 	font-size: 14px;
 	padding-top: 0px;
-	background-color: transparent;
+	color: #5B5B5B;
+	padding-left: 10px;
 }
 input:focus  {
 	border-bottom: 1px solid rgba(3,156,232,1.00);
@@ -25,10 +26,10 @@ input:focus  {
 }
 input .form-control		{
 	width: 100%;
-	border-left: none;
-	border-right: none;
+	border-left-style: none;
+	border-right-style: none;
 	border-bottom: 1px solid rgba(58,71,82,1.00);
-	border-top: none;
+	border-top-style: none;
 	margin-bottom: 10px;
 	outline: none;
 	padding-bottom: 5px;
@@ -37,6 +38,7 @@ input .form-control		{
 }
 table {
 	border: 1px solid #BAC3D4;
+	color: #5B5B5B;
 }
 .table-hero {
 	background-color: #E0DFDF;
@@ -45,8 +47,9 @@ table {
 	border-bottom: 1px none #BAC3D4;
 	border-top: 1px solid #BAC3D4;
 	margin-top: 10px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	margin-bottom: 0px;
 }
 tbody {
 	
@@ -113,9 +116,12 @@ filter-field {
 }
 .filter-field h5  {
 	font-size: 0.85em;
+	font-weight: bold;
+	color: #5B5B5B;
 }
 .filter-field label {
 	font-size: 0.85em;
+	color: #5B5B5B;
 }
 .float-r {
 	float: right;
@@ -139,4 +145,8 @@ filter-field {
 	border: 1px solid #EEEEEE;
 	color: #363636;
 	background-color: #EEEEEE;
+}
+.line-horizontal {
+	margin: 15px -15px;
+	border-bottom: 1px solid #838383;
 }
