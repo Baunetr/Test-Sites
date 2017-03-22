@@ -3,7 +3,6 @@
 
 .form-field label {
 	width: 100%;
-	font-size: .9em;
 }
 input  {
 	width: 100%;
@@ -89,7 +88,7 @@ td.id {
     color: #009BDE;
 }
 td.amount {
-    color: #FF851F;
+	color: #F69317;
 }
 #my-profile {
 	background-color: #ffffff;
@@ -124,4 +123,20 @@ filter-field {
 .table-filter a {
 	font-size: 0.65em;
 	text-indent: 0px;
+}
+.ui-widget-header {
+	background-color: #039CE8;
+	color: #039CE8;
+	border: 1px solid #eee;
+	background-image: none;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border: 1px solid #039CE8;
+	background-color: #EEEEEE;
+	background-image: none;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	border: 1px solid #EEEEEE;
+	color: #363636;
+	background-color: #EEEEEE;
 }
