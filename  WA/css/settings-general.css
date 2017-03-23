@@ -6,13 +6,13 @@ input  {
 	width: 100%;
 	border-left: none;
 	border-right: none;
-	border-bottom: 1px solid rgba(58,71,82,1.00);
+	border-bottom: 1px solid #3A4752;
 	border-top: none;
 	outline: none;
 	padding-bottom: 5px;
 	font-size: 14px;
 	padding-top: 0px;
-	background-color: rgba(244,243,243,1.00);
+	background-color: transparent;
 }
 .field-data {
 	width: 100%;
@@ -47,14 +47,14 @@ input .form-control		{
 }
 .content-row {
 	background-color: rgba(244,243,243,1.00);
-	margin-bottom: 22px;
+	margin-bottom: 0px;
 	padding-bottom: 15px;
 	padding-top: 4px;
 	margin-left: 0px;
 }
-.my-settings-content .content-row
-  {
-	margin-top: 22px;
+.my-settings-content
+   {
+	margin-top: 15px;
 	margin-bottom: 25px;
 }
 select {
@@ -78,6 +78,24 @@ keygen , select{
 	/* [disabled]border-collapse: collapse; */
 	/* [disabled]border-style: none; */
 }
-#my-policies {
+.settings-hero {
+	background-color: #E0DFDF;
+	border-left: 1px solid #BAC3D4;
+	border-right: 1px solid #BAC3D4;
+	border-bottom: 1px none #BAC3D4;
+	border-top: 1px solid #BAC3D4;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
-
+.settings-wrapper {
+	border-left: 1px solid #BAC3D4;
+	border-right: 1px solid #BAC3D4;
+	border-bottom: 1px none #BAC3D4;
+	border-top: 1px solid #BAC3D4;
+	background-color: #F4F3F3;
+	padding-bottom: 15px;
+}
+.my-delegations-content {
+	border: 1px solid #BAC3D4;
+	background-color: #E0DFDF;
+}

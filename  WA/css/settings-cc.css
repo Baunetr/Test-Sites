@@ -1,22 +1,16 @@
 @charset "UTF-8";
-/* CSS Document */
-
-.form-field label {
-	width: 100%;
-}
 input  {
 	width: 100%;
-	border-left-style: none;
-	border-right-style: none;
-	/* [disabled]border-bottom: 1px solid rgba(131,131,131,1.00); */
-	border-top-style: none;
+	border-style: none none solid;
+	border-bottom-color: #3A4752;
+	border-bottom-width: 1px;
 	/* [disabled]outline: none; */
 	padding-bottom: 2px;
 	font-size: 14px;
 	padding-top: 2px;
 	color: #5B5B5B;
 	padding-left: 10px;
-	background-color: #FFFFFF;
+	background-color: transparent;
 	padding-right: 10px;
 }
 input:focus  {
@@ -85,9 +79,6 @@ tr:hover td:nth-child(even) {
 tr:hover td.id {
 	color: #039CE8;
 }
-td:nth-child(even) {
-	background-color: #F4F3F3;
-}
 td {
 	padding-top: 4px;
 	padding-right: 6px;
@@ -97,69 +88,22 @@ td {
 	border-bottom-width: 1px;
 	border-bottom-color: #BAC3D4;
 }
-td.id {
-    color: #009BDE;
-}
-td.amount {
-	color: #F69317;
-}
-#my-profile {
-	background-color: #ffffff;
-	font-family: source-sans-pro;
-	font-style: normal;
-	font-weight: 600;
-	font-variant: normal;
-}
-.filter {
-	padding-bottom: 10px;
-	padding-top: 0px;
-}
-.filter:hover {
-	color: #039CE8;
-}
-#search-text {
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
-filter-field {
-	padding: 10px 10px;
-}
-.filter-field h5  {
-	font-size: 0.85em;
-	font-weight: bold;
-	color: #5B5B5B;
-}
-.filter-field label {
-	font-size: 0.85em;
-	color: #5B5B5B;
-}
 .float-r {
 	float: right;
 }
-.table-filter a {
-	font-size: 0.65em;
-	text-indent: 0px;
+.float-l {
+	float: left;
 }
-.ui-widget-header {
-	background-color: #039CE8;
-	color: #039CE8;
-	border: 1px solid #eee;
-	background-image: none;
-}
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-	border: 1px solid #039CE8;
-	background-color: #EEEEEE;
-	background-image: none;
-}
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-	border: 1px solid #EEEEEE;
-	color: #363636;
-	background-color: #EEEEEE;
+.toolstrip-btm {
+	border-left: 1px solid #BAC3D4;
+	border-right: 1px solid #BAC3D4;
+	border-bottom: 1px solid #BAC3D4;
+	border-top: 1px none #BAC3D4;
+	background-color: #E0DFDF;
+	padding-top: 11px;
+	padding-bottom: 10px;
 }
 .line-horizontal {
 	margin: 15px -15px;
 	border-bottom: 1px solid #838383;
-}
-.float-l {
-	float: left;
 }

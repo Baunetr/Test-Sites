@@ -18,7 +18,7 @@
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
-<link href="css/table.css" rel="stylesheet" type="text/css">
+<link href="css/settings-cc.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <!-- <script src="jQueryAssets/jquery-1.11.1.min.js"></script> -->
 <script src="js/jquery-1.11.3.min.js"></script>
@@ -40,26 +40,33 @@
       <div class="col-sm-12 side-nav">
         <h3 class="text-bold">My Profile</h3>
         <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="#">User Settings</a></li>
+          <li><a href="#">User Settings</a></li>
           <li><a href="#">Expense Policies</a></li>
-          <li><a href="#">Credit Cards</a></li>
+          <li class="active"><a href="#">Credit Cards</a></li>
         </ul>
       </div>
     </div>
     <div class="container-wrapper group col-sm-9">
     <div class="page-wrapper group">
-      
-
 <div class="page" id="bank-accounts">
   <div class="header group">
-    <h1>My Credit Cards</h1>
-    <div class="toolstrip group">
-      <a id="add-bank-button" class="section-heading ertable-action-button red right btn btn-primary float-r" style="margin-right:0;">Add Credit Card</a>
-      <a id="add-csvAccount-button" class="section-heading ertable-action-button red right btn btn-primary float-r" data-bind="click: function() { vm.addCSVAccount(); }" style="margin-right:0;">Add CSV Account</a>
+    <div class="col-xs-12 table-hero">
+      <div class="clearfix">
+        <h2 class="float-l"> My Credit Cards</h2>
+        <div class="toolstrip group float-r"> <a id="add-bank-button" class="section-heading ertable-action-button red right btn btn-primary" style="margin-right:0;">Add Credit Card</a> 
+          <a id="add-csvAccount-button" class="section-heading ertable-action-button red right btn btn-primary" data-bind="click: function() { vm.addCSVAccount(); }" style="margin-right:0;">Add CSV Account</a></div>
+      </div>
+      <div class="col-xs-12">
+        <div class="line-horizontal"></div>
+        <p class="col-xs-12">These accounts can be used to import credit card transactions into ExpensePath.</p>  
+        <p class="col-xs-6 hidden">Select "Reimbursable?" if the bill for this account is paid by the employee or leave unchecked if the company pays the bill directly.</p>  
+        <p class="col-xs-6 hidden">Select "Auto Sync?" for transactions to be automatically retrieved nightly.</p>
+        <p class="col-xs-12">If you have been designated a Proxy, map these accounts to ExpensePath users as the cardholder, so that imported transactions can automatically be identified as belonging to that ExpensePath user and sent to them in a draft expense report.</p>
+      </div>
     </div>
-  </div>
 
-  <div id="bankaccount-credentials-view" class="view-body"></div>
+  </div>
+<div id="bankaccount-credentials-view" class="view-body"></div>
 
   <div class="section">
     <div id="availableBanks" class="ofxList">
@@ -104,16 +111,10 @@
         </div>
       </div>
       <div class="clear"></div>
-
-      <!-- Table of existing accounts -->
-      <div>
-        <div><p class="col-xs-12">These accounts can be used to import credit card transactions into ExpensePath.</p>  <p class="col-xs-6 hidden">Select "Reimbursable?" if the bill for this account is paid by the employee or leave unchecked if the company pays the bill directly.</p>  <p class="col-xs-6 hidden">Select "Auto Sync?" for transactions to be automatically retrieved nightly.</p></div>
-        <div ><p class="col-xs-12">If you have been designated a Proxy, map these accounts to ExpensePath users as the cardholder, so that imported transactions can automatically be identified as belonging to that ExpensePath user and sent to them in a draft expense report.</p></div>
-
         <table class="ofx-existing-banks tinytable table-responsive">
           <thead>
             <tr>
-              <th></th>
+              <th style="width:25px"></th>
               <th>Credit Card Name</th>
               <th>Account Number (last digits)</th>
               <th data-bind="visible: vm.isProxy()">Cardholder</th>
@@ -244,13 +245,13 @@
           <br>
         </div>
 
-        <div class="clear"></div>
+        
       </div>
 
-      <div style="margin-bottom: 40px;">
-        <a class="delete-bank left" style="margin-left:15px;" data-bind="click: function () { deleteFIAccounts(); }"><b>x</b>Delete Selected Accounts</a>
-        <a class="addnew left" style="margin-left:15px;" data-bind="click: function () { addAdditionalCard(); }">Add Additional Card</a>
-        <a class="addnew left" style="margin-left:165px;" data-bind="click: function () { updateAccounts(); }">Save Account Changes</a>
+      <div class="col-xs-12 toolstrip-btm clearfix" style="margin-bottom: 40px;">
+        <a class="delete-bank left btn btn-primary" data-bind="click: function () { deleteFIAccounts(); }"><b>x  </b>Delete Selected Accounts</a>
+        <a class="addnew left btn btn-primary" style="margin-left:15px;" data-bind="click: function () { addAdditionalCard(); }">Add Additional Card</a>
+        <a class="addnew left btn btn-primary float-r" style="margin-left:165px;" data-bind="click: function () { updateAccounts(); }">Save Account Changes</a>
         <a class="addnew right" style="margin-right: 90px; display: none;" data-bind="visible:vm.accountsSameConnection(), click: function () { changePasswordDialog(); }">Change Password</a>
       </div>
       <div class="clear"></div>
