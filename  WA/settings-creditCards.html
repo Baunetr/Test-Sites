@@ -54,8 +54,8 @@
   <div class="header group">
     <h1>My Credit Cards</h1>
     <div class="toolstrip group">
-      <a id="add-bank-button" class="section-heading ertable-action-button red right" style="margin-right:0;">Add Credit Card</a>
-      <a id="add-csvAccount-button" class="section-heading ertable-action-button red right" data-bind="click: function() { vm.addCSVAccount(); }" style="margin-right:0;">Add CSV Account</a>
+      <a id="add-bank-button" class="section-heading ertable-action-button red right btn btn-primary float-r" style="margin-right:0;">Add Credit Card</a>
+      <a id="add-csvAccount-button" class="section-heading ertable-action-button red right btn btn-primary float-r" data-bind="click: function() { vm.addCSVAccount(); }" style="margin-right:0;">Add CSV Account</a>
     </div>
   </div>
 
@@ -107,10 +107,10 @@
 
       <!-- Table of existing accounts -->
       <div>
-        <div style="margin-left:15px"><p>These accounts can be used to import credit card transactions into ExpensePath.  Select "Reimbursable?" if the bill for this account is paid by the employee or leave unchecked if the company pays the bill directly.  Select "Auto Sync?" for transactions to be automatically retrieved nightly.</p></div>
-        <div style="margin-left:15px"><p>If you have been designated a Proxy, map these accounts to ExpensePath users as the cardholder, so that imported transactions can automatically be identified as belonging to that ExpensePath user and sent to them in a draft expense report.</p></div>
+        <div><p class="col-xs-12">These accounts can be used to import credit card transactions into ExpensePath.</p>  <p class="col-xs-6 hidden">Select "Reimbursable?" if the bill for this account is paid by the employee or leave unchecked if the company pays the bill directly.</p>  <p class="col-xs-6 hidden">Select "Auto Sync?" for transactions to be automatically retrieved nightly.</p></div>
+        <div ><p class="col-xs-12">If you have been designated a Proxy, map these accounts to ExpensePath users as the cardholder, so that imported transactions can automatically be identified as belonging to that ExpensePath user and sent to them in a draft expense report.</p></div>
 
-        <table class="ofx-existing-banks tinytable" width="700px">
+        <table class="ofx-existing-banks tinytable table-responsive">
           <thead>
             <tr>
               <th></th>
