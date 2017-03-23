@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>settings.html</title>
+<style> 
+@import url("../epMarketing/css/bootstrap-3.3.7.css");
+.extra-small {
+}
+.bt-sm {
+}
+.col-xs- {
+}
+</style>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<!-- <script src="jQueryAssets/jquery-1.11.1.min.js"></script> -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n4,n2,n6,n9:default;raleway:n1:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="my-profile">
+<div class="container-fluid">
+  <div class="col-xs-12 row">
+    <div class="col-sm-3 row side-nav">
+      <div class="col-sm-12 side-nav">
+        <h3 class="text-bold">My Profile</h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">User Settings</a></li>
+          <li><a href="#">Expense Policies</a></li>
+          <li><a href="#">Credit Cards</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-wrapper group col-sm-9">
+    <div class="page-wrapper group">
+      
+
+<div class="page" id="bank-accounts">
+  <div class="header group">
+    <h1>My Credit Cards</h1>
+    <div class="toolstrip group">
+      <a id="add-bank-button" class="section-heading ertable-action-button red right" style="margin-right:0;">Add Credit Card</a>
+      <a id="add-csvAccount-button" class="section-heading ertable-action-button red right" data-bind="click: function() { vm.addCSVAccount(); }" style="margin-right:0;">Add CSV Account</a>
+    </div>
+  </div>
+
+  <div id="bankaccount-credentials-view" class="view-body"></div>
+
+  <div class="section">
+    <div id="availableBanks" class="ofxList">
+
+      <!-- New credit card account form -->
+      <div id="bank-form" class="add-bank-form generalform" style="display: none;padding-bottom: 30px;margin-bottom: 30px;">
+        <h3>Add New Credit Card Accounts</h3>
+        <div style="margin-left: 15px;">
+          <p>To set up a direct link to import transactions, choose your bank and then enter your online username, password, and other requested information that you use with that bank.</p>
+          <p>Note: By adding your account information and saving an account with ExpensePath, you are authorizing ExpensePath and our financial partner, Plaid, the right, power and authority to access and transmit your data so that we can provide these services.  You can review our privacy policy at <a href="http://expensepath.com/Privacy">ExpensePath.com/Privacy.</a></p>
+        </div>
+
+        <div style="margin-left:30px;">
+          <div style="padding: 20px">
+            <a class="form addnew" data-bind="click: function() { linkHandler.open();}">Link Bank Account with ExpensePath</a>
+            <a class="form general-cancel" style="float:none;margin-right:10px;" id="cancelNewBank">Cancel</a>
+          </div>
+        </div>
+
+        <div data-bind="visible: fiAvailableAccounts().length > 0" style="display: none; margin-top: 25px;">
+          <div style="margin-left: 15px;">
+            <p>And then choose the accounts you want to use</p>
+          </div>
+          <table class="ofx-existing-banks tinytable" width="700px">
+            <thead>
+              <tr>
+                <th>Use?</th>
+                <th>Credit Card Name</th>
+                <th>Account Number (last 4)</th>
+                <th data-bind="visible: vm.isProxy()">Cardholder</th>
+                <th>Account Nickname</th>
+                <th>Reimbursable?</th>
+                <th>Enable Automatic Sync</th>
+              </tr>
+            </thead>
+            <tbody data-bind="foreach: fiAvailableAccounts"></tbody>
+          </table>
+          <div style="margin-top: 25px;padding-bottom: 15px;">
+            <a class="addnew" id="addNewAccount" data-bind="click: function () { vm.saveAccounts(); }" style="float:right;margin-right: 50px;">Save Selected Accounts</a>
+            <a class="general-cancel" style="float:right;margin-right:20px;" id="cancelNewAccount">Cancel</a>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Table of existing accounts -->
+      <div>
+        <div style="margin-left:15px"><p>These accounts can be used to import credit card transactions into ExpensePath.  Select "Reimbursable?" if the bill for this account is paid by the employee or leave unchecked if the company pays the bill directly.  Select "Auto Sync?" for transactions to be automatically retrieved nightly.</p></div>
+        <div style="margin-left:15px"><p>If you have been designated a Proxy, map these accounts to ExpensePath users as the cardholder, so that imported transactions can automatically be identified as belonging to that ExpensePath user and sent to them in a draft expense report.</p></div>
+
+        <table class="ofx-existing-banks tinytable" width="700px">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Credit Card Name</th>
+              <th>Account Number (last digits)</th>
+              <th data-bind="visible: vm.isProxy()">Cardholder</th>
+              <th data-bind="visible: vm.isProxy()">Name on Card</th>
+              <th>Reimbursable?</th>
+              <th>Auto Sync?</th>
+              <th>Last Import</th>
+            </tr>
+          </thead>
+          <tbody data-bind="foreach: fiAccounts">
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild" style="display: none;">Additional Card</td>
+            </tr>
+          
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild" style="display: none;">Additional Card</td>
+            </tr>
+          
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild" style="display: none;">Additional Card</td>
+            </tr>
+          
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false" style="display: none;"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false" style="display: none;"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false" style="display: none;"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild">Additional Card</td>
+            </tr>
+          
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild" style="display: none;">Additional Card</td>
+            </tr>
+          
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild" style="display: none;">Additional Card</td>
+            </tr>
+          
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild" style="display: none;">Additional Card</td>
+            </tr>
+          
+            <tr class="credit-accounts">
+              <td><input type="checkbox" data-bind="checked: selected"></td>
+              <td><input type="text" data-bind="value: nickname" style="width:100%;"></td>
+              <td><input data-bind="value: number"></td>
+              <td data-bind="visible: vm.isProxy()">
+                <select data-bind="options: vm.proxyOwners, optionsText: &quot;fullname&quot;, optionsCaption: &quot;Cardholder ...&quot;, value: cardholder"><option value="">Cardholder ...</option><option value="">GBP User</option><option value="">John Johnson</option><option value="">Marketing Analyst</option><option value="">Sam CEO</option><option value="">Sam CFO</option><option value="">Sam China</option><option value="">Sam Controller</option><option value="">Sam Euro</option><option value="">Sam Sales</option><option value="">Sam Test</option><option value="">Samuel Administrator</option><option value="">Shared Finance</option></select>
+              </td>
+              <td data-bind="visible: vm.isProxy()"><input type="text" data-bind="value: nameOnCard"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="checked: reimbursable"></td>
+              <td data-bind="visible: isChild() == false"><input type="checkbox" data-bind="    checked: autoSync"></td>
+              <td data-bind="visible: isChild() == false"><span data-bind="    text: formattedLastImportDate()">February 9 2017 9:33 AM</span></td>
+              <td colspan="3" data-bind="visible: isChild" style="display: none;">Additional Card</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div data-bind="visible: fiAccounts().length == 0" style="display: none;">
+          <br>
+          <p style="margin-left: 45px;font-style:italic;">You have no accounts yet.  Add a New Bank Account above to get started.</p>
+          <br>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+      <div style="margin-bottom: 40px;">
+        <a class="delete-bank left" style="margin-left:15px;" data-bind="click: function () { deleteFIAccounts(); }"><b>x</b>Delete Selected Accounts</a>
+        <a class="addnew left" style="margin-left:15px;" data-bind="click: function () { addAdditionalCard(); }">Add Additional Card</a>
+        <a class="addnew left" style="margin-left:165px;" data-bind="click: function () { updateAccounts(); }">Save Account Changes</a>
+        <a class="addnew right" style="margin-right: 90px; display: none;" data-bind="visible:vm.accountsSameConnection(), click: function () { changePasswordDialog(); }">Change Password</a>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="availableAccounts" class="ofxList"></div>
+    <div class="clear"></div>
+  </div>
+
+  <div id="dlg-mfa-form" title="Security Question" style="display: none;">
+    <form>
+      <fieldset style="background: none; border: none;">
+        <label for="mfa-question-answer" id="mfa-question">Answer:</label>
+        <input type="text" name="mfa-question-answer" id="mfa-question-answer" class="text ui-widget-content ui-corner-all" style="padding-left: 10px;margin-top: 10px;">
+
+        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">  window.jQuery || document.write('<script src="../../Scripts/Lib/Vendor/jQuery/jquery-1.7.2.min.js">\x3C/script>')</script>
+<script src="../../Scripts/knockout-2.0.0.js" type="text/javascript"></script>
+<script src="../../Scripts/knockout.mapping.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js" type="text/javascript"></script>
+<script type="text/javascript">  window.moment || document.write('<script src="../../Scripts/Lib/Vendor/Moment/moment.min.js">\x3C/script>')</script>
+<script src="../../js/view/OFX/BankAccounts.js?v=20160912" type="text/javascript"></script>
+<script src="../../js/jquery-ui.js" type="text/javascript"></script>
+<script src="https://cdn.plaid.com/link/stable/link-initialize.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" type="text/javascript"></script>
+<script type="text/javascript">  window._ || document.write('<script src="../../Scripts/Lib/Vendor/Underscore/underscore-1.6.0-min.js">\x3C/script>')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js" type="text/javascript"></script>
+<script type="text/javascript">  window.Backbone || document.write('<script src="../../Scripts/Lib/Vendor/Backbone/backbone-1.1.2-min.js">\x3C/script>')</script>
+<script src="../../js/view/shared/CredentialsDialog.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $('#add-bank-button').click(function () {
+    $('#bank-form').show("slow");
+    $('#add-bank-button').hide();
+  });
+
+  $('#cancelNewBank').click(function () {
+    $('#bank-form').hide("slow");
+    $('#add-bank-button').show();
+    $("#newAccountUsername").val('');
+    $("#newAccountPassword").val('');
+  });
+
+  $('#cancelNewAccount').click(function () {
+    $('#bank-form').hide("slow");
+    $('#add-bank-button').show();
+    $("#newAccountUsername").val('');
+    $("#newAccountPassword").val('');
+    vm.fiAvailableAccounts([]);
+  });
+</script>
+
+<script type="text/javascript">
+  var linkHandler = Plaid.create({
+    env: 'production',
+    clientName: 'ExpensePath',
+    key: '01fdbf40cfaac97aecfe670ddcd21d',
+    product: 'connect',
+    longTail: true,
+    onLoad: function () {
+      // The Link module finished loading.
+    },
+    onSuccess: function (public_token) {
+      // Send your public_token to your app server here.
+      vm.getAvailableAccounts(public_token);
+    },
+    onExit: function () {
+      // The user exited the Link flow.
+    },
+  });
+
+  var vm = new FiVM();
+  $(document).ready(function () {
+    var institutions = linkHandler.institutions;
+    institutions.push({ name: 'CSV Upload', type: 'csv', auth: false, connect: false });
+    vm.fiBanks(institutions);
+    vm.getAccounts();
+
+    vm.isProxy(true);
+    if (vm.isProxy()) {
+;
+      var proxyUsers = [
+new userProfile('127f554e-8f1b-4e7b-b3dc-17661eb99bef','John Johnson'),new userProfile('dd4267eb-b59f-4bd6-82f3-36b07cc5641d','Sam CFO'),new userProfile('8ce24042-14cb-44be-9046-3aa4355c01cf','Sam China'),new userProfile('0d7894b4-21e1-4cce-886a-570c404cec30','Sam Test'),new userProfile('d27ac329-cf9b-48fc-99a8-5e81996ffb9d','Sam CEO'),new userProfile('e2618bcc-96b7-4736-9c4a-77bc95f9246d','Sam Sales'),new userProfile('13a28b6c-ff29-444c-a885-7e6d8a7ab7f8','Shared Finance'),new userProfile('afc01459-2509-4227-9b7a-a672e4c0b158','GBP User'),new userProfile('71c7db9b-36af-475d-98bf-c383eef645f0','Sam Controller'),new userProfile('ec44da74-d7c5-4270-b7f8-dad48074faa9','Sam Euro'),new userProfile('f003df37-9812-40c1-aadb-e634fa0d0a16','Samuel Administrator'),new userProfile('11105364-dca8-48cb-84ef-fecd99cc6ecd','Marketing Analyst')      ];
+
+      vm.proxyOwners(proxyUsers);
+      vm.proxyOwners.sort(function (left, right) { return left.fullname.toLowerCase() == right.fullname.toLowerCase() ? 0 : (left.fullname.toLowerCase() < right.fullname.toLowerCase() ? -1 : 1) })
+    }
+
+    ko.applyBindings(vm, document.getElementById("bank-accounts"));
+  });
+
+  function customAlert(outputMsg, titleMsg) {
+    if (!titleMsg) titleMsg = 'Alert';
+    if (!outputMsg) outputMsg = 'No Message to Display.';
+
+    $("<div></div>").html(outputMsg).dialog({
+      title: titleMsg,
+      resizable: false,
+      modal: true,
+      buttons: {
+        "Ok": function () {
+          $(this).dialog("close");
+        }
+      }
+    });
+  }
+</script>
+
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+</script>
+<script>
+    $(document).ready(function(){
+      $(".js-include").each(function(){
+        $(this).load($(this).attr('data-content'));
+      });
+    });
+    </script>
+</body>
+</html>
