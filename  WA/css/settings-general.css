@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.side-nav {
-	height: 100%;
-}
 input  {
 	width: 100%;
 	border-left: none;
@@ -13,6 +10,21 @@ input  {
 	font-size: 14px;
 	padding-top: 0px;
 	background-color: transparent;
+}
+.side-nav .nav.nav-pills.nav-stacked li {
+	background-color: #F4F3F3;
+	border-left: 1px solid #BAC3D4;
+	border-right: 1px solid #BAC3D4;
+	border-bottom-style: solid;
+	border-top-style: none;
+	border-bottom-width: 1px;
+	border-bottom-color: #BAC3D4;
+}
+.side-nav .nav.nav-pills.nav-stacked li :hover  {
+	background-color: #E0DFDF;
+	border-style: none none solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #BAC3D4;
 }
 .field-data {
 	width: 100%;
@@ -55,7 +67,7 @@ input .form-control		{
 .my-settings-content
    {
 	margin-top: 15px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 select {
 	background-color: rgba(244,243,243,1.00);
@@ -98,4 +110,12 @@ keygen , select{
 .my-delegations-content {
 	border: 1px solid #BAC3D4;
 	background-color: #E0DFDF;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.float-r {
+	float: right;
+}
+.float-l {
+	float: left;
 }
