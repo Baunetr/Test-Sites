@@ -11,21 +11,6 @@ input  {
 	padding-top: 0px;
 	background-color: transparent;
 }
-.side-nav .nav.nav-pills.nav-stacked li {
-	background-color: #F4F3F3;
-	border-left: 1px solid #BAC3D4;
-	border-right: 1px solid #BAC3D4;
-	border-bottom-style: solid;
-	border-top-style: none;
-	border-bottom-width: 1px;
-	border-bottom-color: #BAC3D4;
-}
-.side-nav .nav.nav-pills.nav-stacked li :hover  {
-	background-color: #E0DFDF;
-	border-style: none none solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #BAC3D4;
-}
 .field-data {
 	width: 100%;
 	outline: none;
