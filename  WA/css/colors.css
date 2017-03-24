@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.orange { /*Uses: Numbers,Amounts*/
+	color: #F69317;
+}
+.light-grey { /*Uses: Main Background*/
+	background: #F4F3F3;
+}
+.grey { /*Uses: Header, Footer Background*/
+	color: #E0DFDF;
+}
+.dark-grey { /*Uses: Font*/
+	color: #5B5B5B;
+}
+.blue { /*Uses: Focus,Selected Element*/
+	color: #039CE8;
+}
+.dark-blue { /*Uses: input bottom border*/
+	color: #3A4752;
+}
+.blue-grey { /*Uses: Borders*/
+	color: #BAC3D4;
+}
+.white { /*Uses: Page Background*/
+	background:#FFFFFF;
+}
+
