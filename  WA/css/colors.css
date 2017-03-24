@@ -13,8 +13,11 @@
 .dark-grey { /*Uses: Font*/
 	color: #5B5B5B;
 }
-.blue { /*Uses: Focus,Selected Element*/
+.light-blue { /*Uses: BTN color */
 	color: #039CE8;
+}
+.blue { /*Uses: Focus,Selected Element*/
+	color: #275E8F;
 }
 .dark-blue { /*Uses: input bottom border*/
 	color: #3A4752;
