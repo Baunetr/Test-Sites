@@ -14,3 +14,11 @@
 #p-2 .hero {
 	background-color: #F4F3F3;
 }
+.navbar-brand {
+	max-width: 225px;
+	height: auto;
+	padding: 0 15px;
+}
+.nav.navbar-nav {
+	margin: 7px 33px;
+}
