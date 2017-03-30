@@ -7,12 +7,37 @@
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 15px;
+	height: 12em;
+}
+#p-1 {
+	background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.16) 100%,rgba(255,0,0,1.00) 100%), url(../../../epMarketing/assets/ep.blog.img1.1.jpg);
+	background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.16) 100%,rgba(255,0,0,1.00) 100%), url(../../../epMarketing/assets/ep.blog.img1.1.jpg);
+	background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.16) 100%,rgba(255,0,0,1.00) 100%), url(../../../epMarketing/assets/ep.blog.img1.1.jpg);
+	background-image: linear-gradient(180deg,rgba(0,0,0,0.16) 100%,rgba(255,0,0,1.00) 100%), url(../../../epMarketing/assets/ep.blog.img1.1.jpg);
+	background-position: 50% 50%;
+	background-size: 100% 169%;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	height: 420px;
+	color: #E0DFDF;
+}
+#p-1 .btn {
+	padding-right: 40px;
+	padding-left: 40px;
+}
+#p-1 .hero {
+	padding-top: 85px;
 }
 #p-2 {
 	background-color: #E0DFDF;
 }
 #p-2 .hero {
 	background-color: #F4F3F3;
+}
+#p-2 p {
+	line-height: 1.4em;
+	text-align: justify;
+	font-size: 1.1em;
 }
 .navbar-brand {
 	max-width: 225px;
@@ -21,4 +46,64 @@
 }
 .nav.navbar-nav {
 	margin: 7px 33px;
+}
+.float-r {
+	float: right;
+}
+.float-l {
+	float: left;
+}
+#header .message {
+	padding: 0px 15px;
+	width: 280px;
+}
+#p-3 {
+	background-color: #3A4752;
+	padding: 25px 0px;
+}
+.text-white {
+	color: #F4F3F3;
+}
+input  {
+	width: 100%;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #3A4752;
+	border-top: none;
+	outline: none;
+	font-size: 14px;
+	padding-top: 0px;
+	background-color: transparent;
+}
+input:focus  {
+	border-bottom: 1px solid rgba(3,156,232,1.00);
+}
+.form-field label {
+	width: 100%;
+}
+.form-field {
+	padding: 10px 10px 0px;
+}#p-3 .message {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#p-3 .form {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#p-3 .btn {
+	margin-top: 45px;
+}
+#p-3 .form h4 {
+	padding-bottom: 15px;
+}
+#p-3 img {
+	margin-left: 30px;
+}
+#p-4 {
+	padding-bottom: 30px;
+}
+#footer {
+	padding: 5px 0px;
+	border-top: 1px solid #BAC3D4;
 }
