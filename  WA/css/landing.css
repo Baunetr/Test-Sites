@@ -142,6 +142,14 @@ input:focus  {
 	margin-top: -19px;
 	padding-top: 0px;
 }
+#p-2 img {
+	height: 3.5em;
+	margin-top: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
 
 @media screen and (max-width:767px){
 .card {
