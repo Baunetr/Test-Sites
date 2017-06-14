@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Partner Portal';
+  table_data = 'Table Content';
 }
