@@ -4,14 +4,16 @@ import { NgModule } from '@angular/core';
 import { DataTablesModule } from 'angular-datatables';
 
 import { AppComponent } from './app.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
-
+    
     DataTablesModule
   ],
   providers: [],
