@@ -4,10 +4,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; //<-- NgModule Live here
 
 import { AppComponent } from './app.component';
+import { UserDetailComponent } from './user-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserDetailComponent
   ],
   imports: [
     NgbModule.forRoot(),

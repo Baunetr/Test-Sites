@@ -1,31 +1,23 @@
 <div class="container-fluid">
-  <div class="col-lg-4 offset-lg-4" style="text-align:center">
-    <h1>{{title}}</h1><h2>{{user.firstName[0]}}'s details!</h2>
-  </div>
-  <div class="col-lg-6 offset-lg-3" style="background-color: ">
-    <div class="">
-      <label for="">ID:</label>{{user.id}}
-    </div>
-    <div class="">
-      <label for="">First Name:</label> {{user.firstName}}
-      <!--<input [(ngModel)]="user.firstName" placeholder="Change User Name">-->
-    </div>
-    <div class="">
-      <label for="">Last Name:</label> {{user.lastName}}
-      <!--<input [(ngModel)]="user.lastName" placeholder="Change User Name">-->
-    </div>
-    <div class="">
-      <label for="">Email:</label> {{user.email}}
-    </div>
+  <div class="col-lg-4 offset-lg-4" style="text-align:center" >
+    <h1>{{title}}</h1>
+
   </div>
   <hr>
   <div class="row">
     <div class="col">
       <ul class="users">
         <li *ngFor="let user of users">
+          [class.selcted]="user === selectedUser"
+          (click)="onSelect(user)">
           <span class="badge">{{user.id}}</span> {{user.firstName + " " + user.lastName}}
         </li>
       </ul>
+      <user-detail [user]="selectedUser"></user-detail>
     </div>
+  </div>
+  <hr>
+  <div class="">
+    <h5></h5>
   </div>
 </div>

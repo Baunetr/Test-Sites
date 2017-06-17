@@ -3,12 +3,27 @@
   <h1 class="text-center">
     {{title}}!!
   </h1>
+  
+  <br>
+  <hr>
   <div class="col-sm-10 col-sm-offset-1">
-    <input class="form-control" type="search" name="" value="" placeholder="Search: Company Name or User Name...">
-  </div>
-  <div class="col-sm-10 col-sm-offset-1">
-    <h2 class="text-center" style="background">
-      {{app_table}}
-    </h2>
+    <table datatable [dtOptions]="dtOptions" class="row-border hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody class="">
+        <tr *ngFor="let user of users">
+          <td>{{user.id}}</td>
+          <td>{{user.firstName}}</td>
+          <td>{{user.lastName}}</td>
+          <td>{{user.email}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

@@ -1,19 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms'; //<-- NgModule Live here
 import { DataTablesModule } from 'angular-datatables';
 
 import { AppComponent } from './app.component';
-import { TableComponent } from './table/table.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TableComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    
+    FormsModule, //<-- import the Forms Module before binding with [(NgModule)]
     DataTablesModule
   ],
   providers: [],
