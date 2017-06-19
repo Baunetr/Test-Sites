@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-
-import { User } from '../user';
+import { User } from './user';
 
 export const USERS: User[] = [
   {id: 101, firstName: 'Joe', lastName: 'Paxton', email: 'jpaxton@test.com' },
@@ -34,12 +32,3 @@ export const USERS: User[] = [
   {id: 129, firstName: 'Dawn', lastName: 'Summers', email: 'dsummers@test.com' },
   {id: 130, firstName: 'Daniel', lastName: 'Osbourne', email: 'dosborne@test.com' },
 ];
-
-@Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
-})
-export class TableComponent {
-  users = USERS;
-}
