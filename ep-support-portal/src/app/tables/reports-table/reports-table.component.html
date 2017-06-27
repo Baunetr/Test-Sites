@@ -1,0 +1,20 @@
+<div class="row">
+  <table datatable class="row-border hover">
+    <thead>
+      <tr>
+        <th>ER Number</th>
+        <th>Email</th>
+        <th>Amount</th>
+        <th>Date Submitted</th>
+      </tr>
+    </thead>
+    <tbody class="">
+      <tr *ngFor="let report of reports">
+        <td>{{report.erNumber}}</td>
+        <td>{{report.email}}</td>
+        <td>{{report.amount}}</td>
+        <td>{{report.dateSubmitted}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,3 +1,30 @@
-<p>
-  company works!
-</p>
+<div class="text-center card-block">
+  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+    <div class="card">
+      <div class="">
+        <ngb-panel id="static-1" title="Users" class="row">
+        <ng-template ngbPanelContent class="card-block">
+          <app-users-table></app-users-table>
+        </ng-template>
+        </ngb-panel>
+
+      </div>
+    </div>
+    <div class="card">
+      <ngb-panel id="static-2">
+        <ng-template ngbPanelTitle class="row">
+          <span> Reports </span>
+        </ng-template>
+        <ng-template ngbPanelContent class="card-block">
+          <app-reports-table></app-reports-table>
+        </ng-template>
+      </ngb-panel>
+    </div>
+
+        <ngb-panel id="static-3" title="Disabled" [disabled]="true" class="">
+          <ng-template ngbPanelContent>
+
+          </ng-template>
+        </ngb-panel>
+  </ngb-accordion>
+</div>
