@@ -1,8 +1,8 @@
 <div class="text-center card-block">
-  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+  <ngb-accordion [closeOthers]="false" activeIds="static-1">
     <div class="card">
       <div class="">
-        <ngb-panel id="static-1" title="Users" class="row">
+        <ngb-panel id="static-1" title="Users" class="row card-header">
         <ng-template ngbPanelContent class="card-block">
           <app-users-table></app-users-table>
         </ng-template>
