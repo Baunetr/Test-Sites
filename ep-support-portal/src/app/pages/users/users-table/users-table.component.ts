@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { User } from '../../user';
+import { User } from './user';
 
 export const USERS: User[] = [
   {id: 101, firstName: 'Eddard', lastName: 'Stark', email: 'estark@test.com'},
