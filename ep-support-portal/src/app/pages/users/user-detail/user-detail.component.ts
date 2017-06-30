@@ -8,17 +8,18 @@ import 'rxjs/add/operator/switchMap';
   templateUrl: './user-detail.component.html',
   styleUrls: ['./user-detail.component.css']
 })
-export class UserDetailComponent implements OnInit {
+export class UserDetailComponent {
 
   constructor(
     private route: ActivatedRoute,
     private router: Router
   ) { }
 
-  ngOnInit() {
-    // this.route.params
-      // (+) converts string 'id to a number
-      // .switchMap((params: Params) => (+parms['id']))
-  }
+  // ngOnInit() {
+     // this.route.params
+      // (+) converts string 'id to a number'
+      // .switchMap((params: Params) => this.service.getUser(+params['id']))
+      // .subscribe((user: User) => this.user = user);
+  // }
 
 }
