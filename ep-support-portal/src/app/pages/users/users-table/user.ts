@@ -5,3 +5,10 @@ export class User {
   lastName: string;
   email: string;
 }
+
+export class SelectedUser {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+}
