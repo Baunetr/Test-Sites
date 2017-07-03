@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { UsersTableComponent } from './pages/users/users-table/users-table.component';
-// import { CompanyDetailComponent } from './pages/companies/company-detail/company-detail.component';
+import { CompanyDetailComponent } from './pages/companies/company-detail/company-detail.component';
 import { ReportsTableComponent } from './pages/reports/reports-table/reports-table.component';
 import { PageNotFoundComponent } from './not-found.component';
 import { UserDetailComponent } from './pages/users/user-detail/user-detail.component';
@@ -18,7 +18,7 @@ import { ReportDetailComponent } from './pages/reports/report-detail/report-deta
   declarations: [
     AppComponent,
     UsersTableComponent,
-    // CompanyDetailComponent,
+    CompanyDetailComponent,
     ReportsTableComponent,
     PageNotFoundComponent,
     UserDetailComponent,

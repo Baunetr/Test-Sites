@@ -10,8 +10,8 @@ const appRoutes: Routes = [
   { path: 'company-detail', component: CompanyDetailComponent },
   { path: 'user-detail/:id', component: UserDetailComponent },
   { path: 'report-detail', component: ReportDetailComponent },
-  { path: '', redirectTo: '/company-detail', pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent },
+  { path: '', redirectTo: '/company-detail', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -22,5 +22,4 @@ const appRoutes: Routes = [
     RouterModule
   ]
 })
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}
