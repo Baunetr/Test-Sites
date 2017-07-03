@@ -2,18 +2,20 @@
 <div class="container-fluid" style="">
   <div class="header-wrapper">
     <div class="topNav col-lg-12">
-      <button type="button" name="button" class="btn btn-primary btn-link"><a href="#">Contact Us</a></button>
-      <a style="float: right" href="#">Sign Off</a>
+      <button routerLink="/contact-us" class="btn btn-primary">Contact Us</button>
+      <a style="float: right" href="#">Log Out</a>
     </div>
     <div class="clearfix"></div>
     <div class="logoNav col-lg-12" style="background-color: #bbb;">
-      <img src="../assets/images/logo - white.png" alt="">
+      <img src="../../assets/images/logo-white.png" alt="">
     </div>
   </div>
   <h1 class="text-center">
     {{title}}!!
   </h1>
   <div class="col-sm-10 col-sm-offset-1">
-    <app-company></app-company>
+
+    <router-outlet></router-outlet>
+    <!--<app-company></app-company>-->
   </div>
 </div>
