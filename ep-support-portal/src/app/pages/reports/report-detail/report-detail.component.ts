@@ -12,7 +12,7 @@ import { ReportService } from '../report.service';
   providers: [ ReportService ]
 })
 export class ReportDetailComponent implements OnInit {
-  report: Report[];
+  report: Report;
 
   constructor(
     private reportService: ReportService,
@@ -20,12 +20,13 @@ export class ReportDetailComponent implements OnInit {
     private router: Router
   ) { }
 
-  getReport(): Report {
-    return Report[5];
+  getReport(): void {
+    const id: number = +this.route.snapshot.paramMap.get('id');
+    this.reportService.getReport(id).then(report => this.report = report);
   }
 
-  ngOnInit() {
-    this.getReport = return this.reportService.getReport[5];
+  ngOnInit(): void {
+    this.getReport();
   }
 
 }
