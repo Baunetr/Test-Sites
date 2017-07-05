@@ -1,6 +1,7 @@
 import 'rxjs/add/operator/switchMap';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common'
 
 import { Report } from '../reports-table/report';
 import { ReportService } from '../report.service';
@@ -17,16 +18,20 @@ export class ReportDetailComponent implements OnInit {
   constructor(
     private reportService: ReportService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private location: Location
   ) { }
 
   getReport(): void {
-    const id: number = +this.route.snapshot.paramMap.get('id');
-    this.reportService.getReport(id).then(report => this.report = report);
+    const erNumber: number = +this.route.snapshot.paramMap.get('erNumber');
+    this.reportService.getReport(erNumber).then(report => this.report = report);
   }
 
   ngOnInit(): void {
     this.getReport();
   }
 
+  goBack(): void {
+    this.location.back();
+  }
 }

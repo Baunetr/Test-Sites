@@ -9,7 +9,9 @@
       </tr>
     </thead>
     <tbody class="">
-      <tr *ngFor="let user of users">
+      <tr *ngFor="let user of users"
+        [class.selected]="user === selectedUser"
+        (click)="onSelect(user)">
         <td>{{user.id}}</td>
         <td>{{user.firstName}}</td>
         <td>{{user.lastName}}</td>
@@ -18,6 +20,9 @@
     </tbody>
   </table>
 </div>
+<div class=""*ngIf="selectedUser">
+  <h2>{{ selectedUser.firstName }} {{ selectedUser.lastName }}</h2>
+</div>
 <div class="row">
-  <button routerLink="/user-detail" class="btn btn-primary">Go to user details</button>
+  <button (click)="gotoDetail()" class="btn btn-primary">View Details</button>
 </div>

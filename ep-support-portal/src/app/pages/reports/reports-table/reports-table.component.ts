@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 
 import { Report } from './report';
 import { ReportService } from '../report.service';
@@ -11,8 +12,15 @@ import { ReportService } from '../report.service';
 })
 export class ReportsTableComponent implements OnInit {
   reports: Report[];
+  selectedReport: Report;
 
-  constructor(private reportService: ReportService) { }
+  constructor(
+    private router: Router,
+    private reportService: ReportService) { }
+
+  onSelect(report: Report): void {
+    this.selectedReport = report;
+  }
 
   getReports(): void {
     this.reportService.getReports().then(reports => this.reports = reports);
@@ -21,4 +29,9 @@ export class ReportsTableComponent implements OnInit {
   ngOnInit(): void {
     this.getReports();
   }
+
+  gotoDetail(): void {
+    this.router.navigate(['/report-detail', this.selectedReport.erNumber]);
+  }
+
 }

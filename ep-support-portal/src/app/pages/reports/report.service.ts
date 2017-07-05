@@ -9,14 +9,8 @@ export class ReportService {
     return Promise.resolve(REPORTS);
   }
 
-  getReport(id:number): Promise<Report> {
-    let aReport: Report;
-    let i = 0, len = REPORTS.length;
-    for (; i<len; i++) {
-      if (REPORTS[i].erNumber == id) {
-        aReport = REPORTS[i];
-      }
-    }
-    return Promise.resolve(aReport);
+  getReport(id: number): Promise<Report> {
+    return this.getReports()
+      .then(reports => reports.find(report => report.erNumber === id));
   }
 }
