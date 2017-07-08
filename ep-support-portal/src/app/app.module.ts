@@ -12,7 +12,9 @@ import { CompanyDetailComponent } from './pages/companies/company-detail/company
 import { ReportsTableComponent } from './pages/reports/reports-table/reports-table.component';
 import { PageNotFoundComponent } from './not-found.component';
 import { UserDetailComponent } from './pages/users/user-detail/user-detail.component';
-import { ReportDetailComponent } from './pages/reports/report-detail/report-detail.component'
+import { ReportDetailComponent } from './pages/reports/report-detail/report-detail.component';
+import { LogOnComponent } from './pages/log-on/log-on.component';
+import { SupportDashboardComponent } from './pages/companies/support-dashboard/support-dashboard.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ReportDetailComponent } from './pages/reports/report-detail/report-deta
     ReportsTableComponent,
     PageNotFoundComponent,
     UserDetailComponent,
-    ReportDetailComponent
+    ReportDetailComponent,
+    LogOnComponent,
+    SupportDashboardComponent
   ],
   imports: [
     NgbModule.forRoot(),

@@ -1,0 +1,29 @@
+<div class="container-fluid col-sm-12" id="login">
+  <div class="col-fixed hidden-sm hidden-xs">
+    <div class="" id="login-feature"> <img src="https://expensepath.com/assets/logo%20-%20White.png" alt="" width="169" height="51" /></div>
+  </div>
+  <div class="col-md-6 col-md-offset-1" id="login-main">
+    <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 form">
+      <div class="form-header">
+        <div><img src="https://expensepath.com/assets/ep.logo.png" alt="" width="275" height="92" class="center-block hidden-md hidden-lg hidden-xl" /></div>
+        <h4>Sign into <span class="text-italic">Expense</span>Path.</h4>
+      </div>
+        <div class="form-field clearfix">
+          <label for="username" class="col-xs-12">Email Address</label>
+          <input id="username" name="username" type="text" class="col-xs-12">
+        </div>
+        <div class="form-field clearfix">
+          <div class="col-xs-12">
+            <label for="password">Password</label>
+            <a href="ForgotPassword" tabindex="4">Forgot password?</a>
+          </div>
+          <input id="password" name="password" type="password" class="col-xs-12" autocomplete="off">
+        </div>
+      <div class="form-footer">
+        <div class="col-xs-12">
+          <button (click)="gotoDashboard()"  class="logon btn btn-primary col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
