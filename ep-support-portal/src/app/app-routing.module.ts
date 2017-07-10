@@ -11,7 +11,7 @@ import { PageNotFoundComponent } from './not-found.component';
 const appRoutes: Routes = [
   { path: 'log-on', component: LogOnComponent },
   { path: 'support-dashboard', component: SupportDashboardComponent },
-  { path: 'company-detail', component: CompanyDetailComponent },
+  { path: 'company-detail/:id', component: CompanyDetailComponent },
   { path: 'user-detail/:id', component: UserDetailComponent },
   { path: 'report-detail/:erNumber', component: ReportDetailComponent },
   { path: '', redirectTo: '/support-dashboard', pathMatch: 'full' },

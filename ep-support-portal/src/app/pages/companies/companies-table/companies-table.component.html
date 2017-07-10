@@ -1,0 +1,28 @@
+<div class="row">
+  <table datatable class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date Created</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody class="">
+      <tr *ngFor="let company of companies"
+        [class.selected]="company === selectedCompany"
+        (click)="onSelect(company)">
+        <td>{{company.id}}</td>
+        <td>{{company.name}}</td>
+        <td>{{company.dateCreated}}</td>
+        <td>{{company.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class=""*ngIf="selectedCompany">
+  <h2>{{ selectedCompany.name }}</h2>
+</div>
+<div class="row">
+  <button (click)="gotoDetail()" class="btn btn-primary">View Details</button>
+</div>
