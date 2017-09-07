@@ -9,13 +9,41 @@
     width: 0px;
 		height: 4px;
 		border-radius: 50%;
-		background-color: orange;
+		background-color: #F69317;
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1750ms; /* Safari 4.0 - 8.0 */
     animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: 2;
+    animation-duration: 1750ms;
+    animation-iteration-count: 3;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
+
+#login-message {
+	margin-bottom: 20px;
+	height: 6rem;
+}
+
+#login-message .card-block {
+	border-left-width: 3px;
+	border-left-color: #F69317;
+	border-left-style: solid;
+	height: 5rem;
+}
+
+#login-btn-load {
+	margin-bottom: 20px;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -90,6 +118,7 @@
 	outline: none;
 	padding-bottom: 5px;
 	font-size: 16px;
+	width: 100%;
 }
 #login-main input:focus  {
 	border-bottom: 1px solid rgba(3,156,232,1.00);
