@@ -1,5 +1,36 @@
 @charset "UTF-8";
 /* CSS Document */
+ .progress {
+	background-color: transparent;
+	width:100%;
+
+}
+	.progress-bar {
+    width: 0px;
+		height: 4px;
+		border-radius: 50%;
+		background-color: orange;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+		0%   {width:0px; left:0px;}
+		50%  {width:300px;}
+		100% {width:0px; left:500px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+		0%   {width:0px; left:0px;}
+		50%  {width:300px;}
+		100% {width:0px; left:500px;}
+}
 #login {
 	height: 750px;
 }
@@ -42,7 +73,6 @@
 #login-main .form-field  {
 	margin-top: 11px;
 	height: auto;
-	clear: both;
 }
 #login-main .form-field label {
 	float: left;
@@ -83,4 +113,5 @@
 	padding-left: 0px;
 	vertical-align: middle;
 }
+
 }
