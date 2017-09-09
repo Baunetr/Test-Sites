@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
 /* tighten up header image and margin/padding */
 .grid-4{
 	margin-bottom:0px;
@@ -10,11 +20,11 @@
 .logoAndTopNav .grid-4 img{
 	height: 65px;
 }
-/* alter main navbar look */	
+/* alter main navbar look */
 .navigation-container group{
 	background-color: #039ce8;
     padding-top: 0px;
-}	
+}
 
 div.navigation-container li.top a.dir {
     border-bottom: 3px solid #fff;
@@ -28,7 +38,7 @@ ul.dropdown li.right a:hover, ul.dropdown li a:hover, ul.dropdown a.open, ul.dro
 ul.dropdown li a {
 	color: #fff;
 }
-	
+
 ul.dropdown ul a {
 	background-color:#3c3c3c;
 }
@@ -50,4 +60,3 @@ ul.dropdown ul a {
 	    color: #fff;
     background-color: #3c3c3c;
 }
-

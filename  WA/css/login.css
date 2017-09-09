@@ -32,14 +32,14 @@
 
 #login-message {
 	margin-bottom: 20px;
-	height: 6rem;
+	min-height: 6rem;
 }
 
 #login-message .card-block {
 	border-left-width: 3px;
 	border-left-color: #F69317;
 	border-left-style: solid;
-	height: 5rem;
+	min-height: 5rem;
 }
 
 #login-btn-load {
