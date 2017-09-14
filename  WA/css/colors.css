@@ -2,34 +2,58 @@
 /* CSS Document */
 
 .orange { /*Uses: Numbers,Amounts*/
+	background-color: #F69317;
+}
+.orange-text { /*Uses: Numbers,Amounts*/
 	color: #F69317;
 }
 .light-grey { /*Uses: Main Background*/
 	background: #F4F3F3;
 }
+.light-grey-text { /*Uses: Main Background*/
+	color: #F4F3F3;
+}
 .grey { /*Uses: Header, Footer Background*/
 	background: #E0DFDF;
 }
+.grey-text { /*Uses: Header, Footer Background*/
+	color: #E0DFDF;
+}
 .dark-grey { /*Uses: Font*/
+	background-color: #5B5B5B;
+}
+.dark-grey-text { /*Uses: Font*/
 	color: #5B5B5B;
 }
 .light-blue { /*Uses: BTN color */
+	background-color: #039CE8;
+	border-color: #039CE8;
+}
+.light-blue-text { /*Uses: BTN color */
 	color: #039CE8;
 }
 .blue { /*Uses: Focus,Selected Element*/
+	background-color: #275E8F;
+	border-color: #275E8F;
+}
+.blue-text { /*Uses: Focus,Selected Element*/
 	color: #275E8F;
 }
 .dark-blue { /*Uses: input bottom border*/
+	background-color: #3A4752;
+}
+.dark-blue-text { /*Uses: input bottom border*/
 	color: #3A4752;
 }
 .blue-grey { /*Uses: Borders*/
+	background-color: #BAC3D4;
+}
+.blue-grey-text { /*Uses: Borders*/
 	color: #BAC3D4;
 }
 .white { /*Uses: Page Background*/
-	background:#FFFFFF;
+	background-color: #FFFFFF;
 }
-
-.form {
-}
-.clear {
+.white-text { /*Uses: Page Background*/
+	color: #FFFFFF;
 }
