@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ( $(window).scrollTop() >= 25 ) {
+    if ( $(window).scrollTop() >= 28 ) {
         $('#nav-1').attr('class', 'navbar navbar-nav fixed-top col-md-12 hidden-xs-up');
 
         $('#nav-2').attr('class', 'navbar navbar-nav fixed-top col-md-12');

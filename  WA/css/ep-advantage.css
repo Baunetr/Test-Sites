@@ -74,16 +74,28 @@
   border-style: solid;
   border-color: white;
 }
+
 .line-horizontal {
   height: 3px;
   width: 2.5rem;
   margin: 0px 5px;
-
-
 }
 
-.line-vertical {
-  height: 10px;
-  border-left: 2px;
-  border-style: solid;
+.line-horizontal-full {
+  height: 3px;
+  width: 20rem;
+  margin: 0px 5px;
+}
+
+.line-vertical-full {
+  height: 100%;
+  width: 4px;
+  background-color: black;
+}
+
+/*Equal-width columns can be broken into multiple lines,
+but there is a Safari flexbox bug that prevents this from
+working without an explicit flex-basis or border.*/
+.col {
+  border: 1px solid transparent;
 }

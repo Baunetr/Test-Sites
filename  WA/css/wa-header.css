@@ -19,6 +19,7 @@
 
 #nav-1{
 	opacity:1.0;
+  height:80px;
 	filter:alpha(opacity=40); /* For IE8 and earlier */
 	-webkit-transition: 1s ease-in;
 	-moz-transition: 1s ease-in;
