@@ -49,15 +49,15 @@
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
 		0%   {width:0px; left:0px;}
-		50%  {width:300px;}
-		100% {width:0px; left:500px;}
+		50%  {width:400px;}
+		100% {width:0px; left:700px;}
 }
 
 /* Standard syntax */
 @keyframes example {
 		0%   {width:0px; left:0px;}
-		50%  {width:300px;}
-		100% {width:0px; left:500px;}
+		50%  {width:400px;}
+		100% {width:0px; left:700px;}
 }
 #login {
 

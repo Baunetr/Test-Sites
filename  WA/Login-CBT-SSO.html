@@ -16,47 +16,48 @@
 </head>
 
 <body>
-<div class="container-fluid" id="login">
+<div class="container-fluid col-12" id="login">
   <div class="row no-gutters">
-    <dropdown-divider class="col-fixed hidden-md-down ">
+    <div class="col-auto d-none d-sm-none d-md-none d-lg-block">
       <div class="" id="login-feature"> <img src="../../epMarketing/assets/logo%20-%20White.png" alt="" width="169" height="51"> </div>
     </div>
-    <div class="col-lg-8 ml-lg-auto col-md-12 pt-3 " id="login-main">
-      <div class="col-sm-8offset-sm-2 form">
+    <div class="col d-flex justify-content-center" id="login-main">
+      <div class="col-8 form">
         <div class="form-header ">
-          <div class="col-sm-12 d-flex flex-wrap justify-content-center">
-            <img src="../../epMarketing/assets/ep.logo.png" alt="" width="275" height="92" class="hidden-lg-up">
+          <div class="col-12 d-flex flex-wrap justify-content-center">
+            <img src="../../epMarketing/assets/ep.logo.png" alt="" width="275" height="92" class=" d-lg-none d-xl-none ">
           </div>
 
-          <div class="d-flex flex-wrap justify-content-center hidden-md-down">
+          <div class="col-12 text-center d-flex flex-wrap justify-content-center d-none d-sm-none d-md-none d-lg-block">
             <h4>Welcome to <span class="text-italic">Expense</span>Path.</h4>
-            <br>
-            <br>
           </div>
         </div>
-        <div id="login-message" class="no-gutters ">
-          <div class="col-sm-10 offset-sm-1">
-            <!--note: add hide capabilites to card div below-->
-            <div class="card">
-             <div class="card-block">
-              <div id="myMessage" class="card-text d-flex align-content-center">
-                loading...
+        <div class="form-body">
+          <div id="login-message" class=" col-12 d-flex justify-content-center ">
+            <div class="col-10 ">
+              <!--note: add hide capabilites to card div below-->
+              <div class="card">
+               <div class="card-block">
+                <div id="myMessage" class="card-text  ">
+                  loading...
+                </div>
+               </div>
               </div>
-             </div>
             </div>
           </div>
-        </div>
-        <div class=" d-flex flex-wrap justify-content-center">
-          <button type="button" class="btn btn-outline-primary col-sm-10" onclick="myflow()">Sign In</button>
-        </div>
-        <div id="login-btn-load" class="no-gutters d-flex flex-wrap justify-content-center">
-          <div class="progress col-sm-10">
-            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class=" d-flex flex-wrap justify-content-center">
+            <button type="button" class="btn btn-outline-primary col-8" onclick="myflow()">Sign In</button>
+          </div>
+          <div id="login-btn-load" class="no-gutters d-flex flex-wrap justify-content-center">
+            <div class="progress col-8">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a class="" href="#">Sign in with email and password</a>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <a class="" href="#">Sign in with email and password</a>
-        </div>
+
       </div>
     </div>
   </div>
