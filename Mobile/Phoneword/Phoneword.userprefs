@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{6D8C5426-A438-4273-8A57-DF0C8124EA35}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Phoneword/Phoneword/MainPage.xaml">
+    <Files>
+      <File FileName="Phoneword/Phoneword.iOS/Main.cs" Line="21" Column="1" />
+      <File FileName="Phoneword/Phoneword/App.xaml" Line="7" Column="1" />
+      <File FileName="Phoneword/Phoneword/MainPage.xaml" Line="17" Column="19" />
+      <File FileName="Phoneword/Phoneword/MainPage.xaml.cs" Line="11" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Phoneword.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.52D7604D-3AAD-4C1E-884A-200E37A3D50C" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Phoneword.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

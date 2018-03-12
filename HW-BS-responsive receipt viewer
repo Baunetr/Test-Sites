@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- EP CSS -->
+    <link rel="stylesheet" href="./ep-modal.css" type="text/css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1 class="m-5">Hello, world!</h1>
+    <hr>
+    <!-- Button trigger modal -->
+    <div class="col-12 m-2">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalRV">
+        Launch Receipt Viewer!!
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalRV" tabindex="-1" role="dialog" aria-labelledby="exampleModalRVTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom border-secondary">
+            <div class="col-12">
+              <div class="text-center">
+                <h4 class="text-uppercase">Title</h4>
+                <button type="button" class="position-absolute close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body bg-light">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-10 d-flex align-items-center flex-column">
+                  <div class="row">
+                    <div class="col-12" >
+                      <div class="" style= "height: 40rem; width: 25rem; background-color: black;">
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="d-flex align-self-center">
+                          <h6>text</h6>
+                        </div>
+                        <div class="ml-5">
+                          <img src="" alt="zoom icon">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 border-secondary border d-flex align-items-center flex-column">
+                  <div class=" mt-4">
+                    <div class="border border-primary" >
+                      <div class="" style="height: 5rem; width: 5rem; background-color: black;">
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" mt-4">
+                    <div class="border border-secondary" >
+                      <div class="" style="height: 5rem; width: 5rem; background-color: black;">
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" mt-4">
+                    <div class="border border-secondary" >
+                      <div class="" style="height: 5rem; width: 5rem; background-color: black;">
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div class="border border-secondary" >
+                      <div class="" style="height: 5rem; width: 5rem; background-color: black;">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top border-secondary">
+            <div class="col-4">
+              <button type="button" class="btn btn-outline-primary btn-block " data-dismiss="modal">Return To Gallery</button>
+            </div>
+            <div class="col-2 ml-auto">
+              <button type="button" class="btn btn-outline-secondary btn-block " data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Button trigger modal -->
+<div class="col-12 m-2">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalConfirm">
+    Launch Confirm demo modal
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="col-12">
+          <div class="text-center ">
+            <img src="../epMarketing/assets/icons/svg/060-warning.svg" class="" alt="..." style="height: 4rem">
+            <button type="button" class="position-absolute close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-5 bg-light">
+        <div class="text-center">
+          <h4>Warning: this cannot be undone.</h4>
+          <p class="my-4"> By clicking yes, you will perminently delete 7 expense reports.
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer bg-light">
+        <div class="col-12 d-flex flex-wrap justify-content-center">
+          <div class="col-6">
+            <button type="button" class="col-12 btn btn-outline-danger ">Yes, Delete Expenses</button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="col-12 btn btn-outline-secondary " data-dismiss="modal">Cancel, Keep Expenses</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

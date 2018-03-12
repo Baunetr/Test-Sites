@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{9785D147-C90E-47FD-A1A0-CBD233E708BB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppDelegate.cs">
+    <Files>
+      <File FileName="AppDelegate.cs" Line="3" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.ColorControl PreferredExecutionTarget="B06B175A-3301-444A-8D04-B252857E23B9" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
