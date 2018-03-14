@@ -10,6 +10,11 @@
 
     <!-- EP CSS -->
     <link rel="stylesheet" href="./ep-modal.css" type="text/css">
+    <style media="screen">
+    .form-control:focus {
+      box-shadow: unset;
+    }
+    </style>
 
     <title>Hello, world!</title>
   </head>
@@ -19,88 +24,43 @@
     <!-- Button trigger modal -->
     <div class="col-12 m-2">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalRV">
-        Launch Receipt Viewer!!
+        Launch ER Creater!!
       </button>
     </div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalRV" tabindex="-1" role="dialog" aria-labelledby="exampleModalRVTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header ">
             <div class="col-12">
-              <div class="text-center">
-                <h4 class="text-capitalize">Receipt viewer</h4>
-                <button type="button" class="position-absolute close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+              <button type="button" class="position-absolute close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
           </div>
           <div class="modal-body bg-light">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-10 pl-0 d-flex align-items-center flex-column receiptView">
-                  <div class="row" style=" width: -webkit-fill-available;">
-                    <div class="col-12" >
-                      <div id="carouselExampleControls" class="carousel slide " data-ride="carousel" data-interval="false" >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/img-1.png" class="img-fluid" alt="First Img">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/img-2.png" class="img-fluid" alt="Second Img">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/img-1.png" class="img-fluid" alt="Third Img">
-                          </div>
-                        </div>
-                      </div>
-                      <div id="receiptUploader" class="container-fluid d-none">
-                        <div class="row">
-                          <div class="col-12 align-self-center text-center ">
-                            <h5 class="text-muted">Drag Receipts Here</h5>
-                            <p class="text-muted">or </p>
-                            <button class="btn btn-outline-primary"type="button" name="button">Choose Receipts</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <form class="col-12 no-gutters">
+                  <div class="form-group col-12">
+                    <label for="exampleInputTitle">Title</label>
+                    <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" >
                   </div>
-                </div>
-                <div id="block-selectable" class="col-2 d-flex align-items-center flex-column">
-                  <div class="row mt-4">
-                    <a class=" border selected " href="#carouselExampleControls" role="button" data-slide-to="0" onclick="changeSelected(false)">
-                      <img src="./img/img-1.png" class="img-fluid " alt="responsive img">
-                    </a>
+                  <div class="form-group col-12">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
-                  <div class="row mt-4">
-                    <a class=" border " href="#carouselExampleControls" role="button" data-slide-to="1" onclick="changeSelected(false)">
-                      <img src="./img/img-2.png" class="img-fluid" alt="responsive img">
-                    </a>
-                  </div>
-                  <div class="row mt-4">
-                    <a class=" border" href="#carouselExampleControls" role="button" data-slide-to="2" onclick="changeSelected(false)">
-                      <img src="./img/img-1.png" class="img-fluid " alt="responsive img">
-                    </a>
-                  </div>
-                  <div class="row my-4">
-                    <a class=" border" role="button" data-slide-to="3" onclick="changeSelected(true)">
-                      <div class="ep-bg-grey d-flex p-3">
-                        <img src="../epMarketing/assets/icons/svg/add.svg" style="height: 100%; width:100%;" class="img-fluid" alt="responsive img">
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer ">
             <div class="col-6 col-lg-4">
-              <button type="button" class="btn btn-outline-primary btn-block " data-dismiss="modal">Return To Gallery</button>
+              <button type="button" class="btn btn-outline-primary row" data-dismiss="modal">Create</button>
             </div>
-            <div class="col-4  col-lg-2 ml-auto">
-              <button type="button" class="btn btn-outline-secondary btn-block " data-dismiss="modal">Close</button>
+            <div class="col-4 col-lg-2 ml-auto">
+              <button type="button" class="btn btn-outline-secondary " data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
