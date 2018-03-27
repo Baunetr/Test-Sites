@@ -71,23 +71,23 @@
                 <div id="block-selectable" class="col-2 d-flex align-items-center flex-column">
                   <div class="row mt-4">
                     <a class=" border selected " href="#carouselExampleControls" role="button" data-slide-to="0" onclick="changeSelected(false)">
-                      <img src="./img/img-1.png" class="img-fluid " alt="responsive img">
+                      <img src="./img/img-1.png" class="img-fluid p-1" alt="responsive img">
                     </a>
                   </div>
                   <div class="row mt-4">
                     <a class=" border " href="#carouselExampleControls" role="button" data-slide-to="1" onclick="changeSelected(false)">
-                      <img src="./img/img-2.png" class="img-fluid" alt="responsive img">
+                      <img src="./img/img-2.png" class="img-fluid p-1" alt="responsive img">
                     </a>
                   </div>
                   <div class="row mt-4">
                     <a class=" border" href="#carouselExampleControls" role="button" data-slide-to="2" onclick="changeSelected(false)">
-                      <img src="./img/img-1.png" class="img-fluid " alt="responsive img">
+                      <img src="./img/img-1.png" class="img-fluid p-1" alt="responsive img">
                     </a>
                   </div>
                   <div class="row my-4">
                     <a class=" border" role="button" data-slide-to="3" onclick="changeSelected(true)">
                       <div class="ep-bg-grey d-flex p-3">
-                        <img src="../epMarketing/assets/icons/svg/add.svg" style="height: 100%; width:100%;" class="img-fluid" alt="responsive img">
+                        <img src="../epMarketing/assets/icons/svg/add.svg" style="height: 100%; width:100%;" class="img-fluid p-1" alt="responsive img">
                       </div>
                     </a>
                   </div>

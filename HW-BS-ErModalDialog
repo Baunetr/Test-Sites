@@ -33,7 +33,8 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header ">
-            <div class="col-12">
+            <div class="col-12 text-center">
+              <h4 class="text-capitalize">Create Expense Report</h4>
               <button type="button" class="position-absolute close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>

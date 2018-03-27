@@ -1,9 +1,49 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+
+.icon {
+  /* Lets the icon inherit the text color. */
+  fill: currentColor;
+
+  /* Inherit the text’s size too. Also allows sizing
+     the icon by changing its font-size. */
+  width: 1em;
+  height: 1em;
+
+  /* Nice visual alignment for icons alongside text.
+     (I got a few questions about this and: with most
+     fonts and styles, this works better than just
+     vertical-align:middle. Try it and see what you
+     like best. */
+  vertical-align: -0.15em;
+
+  /* Paths and strokes that overflow the viewBox can
+     show in IE. If you use normalize.css, it already
+     sets this. */
+  overflow: hidden;
+}
+
+.icon-search {
+	font-size: 30px;
+}
+.icon-filter {
+	font-size: 35px;
+}
+
+#filter-icon {
+	position: absolute;
+	padding: 0rem;
+  margin: -16px -16px;
+  top: 5px;
+  right: 2px;
+}
+
 .form-field label {
 	width: 100%;
 }
+
 input  {
 	width: 100%;
 	border-left-style: none;
@@ -54,7 +94,7 @@ table {
 	margin-bottom: 0px;
 }
 tbody {
-	
+
 }
 th {
 	background-color: #F4F3F3;
@@ -118,8 +158,7 @@ td.amount {
 	color: #039CE8;
 }
 #search-text {
-	padding-top: 4px;
-	padding-bottom: 4px;
+
 }
 filter-field {
 	padding: 10px 10px;
