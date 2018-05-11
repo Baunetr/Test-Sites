@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  padding: 0;
+  background-color: #EEE;
+  height: 100%;
+  line-height: 1.42857143;
+  margin: 0;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #404040;
+}
+/* .ep-wrapper {
+  min-height: 100%;
+  padding-top: 61px;
+}
+.ep-top-header {
+  background-color: #FFF;
+  border: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6e5e5;
+  padding: 0;
+}
+.ep-top-header .ep-right-navbar .navbar-nav {
+    background-color: transparent;
+}
+
+.ep-top-header .ep-icons-nav {
+    margin-right: 20px;
+}
+
+.ep-icons-nav>li.dropdown>a .ep-icon {
+  font-size: 1.846rem;
+  vertical-align: middle;
+  color: #737373;
+}
+.ep-fixed-sidebar .ep-left-sidebar {
+    height: 100%;
+    margin-top: 61px;
+    padding-bottom: 61px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1029;
+}
+.ep-left-sidebar {
+    background-color: #f5f5f5;
+    width: 230px;
+    left: 0;
+    position: absolute;
+    border-right: 1px solid #e3e3e3;
+}
+.ep-content {
+  position: relative;
+  left: 0;
+  margin-left: 230px;
+  min-height: 100%;
+}
+.main-content {
+  padding: 25px;
+}
+.widget {
+  background-color: #FFF;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+.widget.widget-tile {
+    padding: 24px 20px;
+    margin-bottom: 25px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+} */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
+/* tighten up header image and margin/padding */
+.grid-4{
+	margin-bottom:0px;
+	height: 65px;
+}
+
+#nav-1{
+	opacity:1.0;
+  height:80px;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	-webkit-transition: 1s ease-in;
+	-moz-transition: 1s ease-in;
+	-o-transition: 1s ease-in;
+	-ms-transition: 1s ease-in;
+	transition: .5s ease-in;
+}
+#nav-2{
+	height: 4.5rem;
+	opacity:0;
+	background-color: white;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	-webkit-transition: 1s ease-in;
+	-moz-transition: 1s ease-in;
+	-o-transition: 1s ease-in;
+	-ms-transition: 1s ease-in;
+	transition: .5s ease-in;
+}
+.nav-item{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+#logo img{
+	opacity:1.0;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	-ms-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+#logo img:hover{
+-moz-transform: scale(1.05);
+-webkit-transform: scale(1.05);
+-o-transform: scale(1.05);
+transform: scale(1.05);
+-ms-transform: scale(1.05);
+filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',M11=0, M12=-0, M21=0, M22=2);
+}
+
+.logoAndTopNav .grid-4 img{
+	height: 65px;
+}
+/* alter main navbar look */
+.navigation-container group{
+	background-color: #039ce8;
+    padding-top: 0px;
+}
+
+div.navigation-container li.top a.dir {
+    border-bottom: 3px solid #fff;
+}
+
+ul.dropdown li.right a:hover, ul.dropdown li a:hover, ul.dropdown a.open, ul.dropdown li:hover > a.dir {
+    background-color: #fff;
+    color: #3c3c3c;
+}
+
+ul.dropdown li a {
+	color: #fff;
+}
+
+ul.dropdown ul a {
+	background-color:#3c3c3c;
+}
+
+.container-wrapper .group {
+    border-top: 3px solid #fff;
+}
+
+/*CSS Changes for Other Page Elements*/
+
+/*change color for quick veiw blocks*/
+.block-value {
+	color: #f16924;
+    background-color: #3c3c3c;
+}
+
+.block-label {
+	font-size:1.1em;
+	    color: #fff;
+    background-color: #3c3c3c;
+}

@@ -2,6 +2,53 @@
 /* CSS Document */
 
 
+#reim-nav-view .nav-divider {
+height: 0;
+margin: .5rem 0;
+overflow: hidden;
+border-top: 1px solid #e9ecef;
+}
+
+#reim-nav-view .nav-menu {
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius: .25rem;
+}
+
+#reim-nav-view .nav-header {
+  display: block;
+  padding: .5rem 1.5rem;
+  margin-bottom: 0;
+  font-size: .875rem;
+  color: #6c757d;
+  white-space: nowrap;
+}
+
+#reim-nav-view .nav-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+
+ul {
+  list-style-type: none;
+
+}
 
 .icon {
   /* Lets the icon inherit the text color. */
@@ -98,10 +145,10 @@ tbody {
 }
 th {
 	background-color: #F4F3F3;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-right: 8px;
 	padding-left: 8px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	border-style: none none solid;
 	border-bottom-width: 1px;
 	border-bottom-color: #BAC3D4;
@@ -138,7 +185,7 @@ td {
 	border-bottom-color: #BAC3D4;
 }
 td.id {
-    color: #009BDE;
+  color: #009BDE;
 }
 td.amount {
 	color: #F69317;
@@ -202,3 +249,5 @@ filter-field {
 .float-l {
 	float: left;
 }
+
+/* CSS for Report Table Tabs */

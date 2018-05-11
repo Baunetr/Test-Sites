@@ -11,144 +11,81 @@
     <!-- jQuery CSS -->
 
     <!-- EP CSS -->
-    <link href="css/table.css" rel="stylesheet" type="text/css">
+
 
 
     <title>ER Pay!</title>
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-$( function() {
-  $( "#slider-range" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 75, 300 ],
-    slide: function( event, ui ) {
-      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-    }
-  });
-  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-} );
-</script>
-
   </head>
 
   <body>
-    <h1 class="m-5">Hello, ER Pay Portal!</h1>
-    <hr>
-
-    <div class="col-12">
-      <div class="col-12 table-hero">
-        <div class="col-12 ">
-          <div class="col-6" id="search-text">
-            <div class="input-group input-group-sm row">
-              <input type="text" class="form-control" placeholder="SEARCH:    ID / TITLE ...">
-              <div class="input-group-append">
-                <span class="input-group-btn" id=""><img src="./EP-WA-Icons/svg/search.svg" style="" class="img-fluid btn d-flex align-self-stretch icon icon-search p-1 " alt="responsive img"></span>
+    <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content container-fluid">
+        <div class="modal-header col-12">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
               </div>
-          </div>
-        </div>
-        <div id="filter-icon"class="" onclick="toggleFilter() " selected >
-          <div class="">
-            <img src="./EP-WA-Icons/svg/filter.svg" style="" class="img-fluid  btn icon icon-filter p-1 " alt="responsive img">
-          </div>
-        </div>
-        </div>
-      <div id="filter-table" class="table-filter d-none">
-        <div class="col-sm-12">
-          <div class="line-horizontal"></div>
-        </div>
-        <div class="col-sm-12 filter-field">
-          <h5>DATE RANGE:</h5>
-          <div class="row">
-            <div class="col-md-6 form-field">
-              <label>From: <span class="orange">*</span></label>
-              <input type="date" placeholder="enter date">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6 form-field">
-              <label>To: <span class="orange">*</span></label>
-              <input type="date" placeholder="enter date">
+            <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
             </div>
           </div>
+          <button class="btn btn-primary" type="submit">Submit form</button>
+          <div class="modal-footer">
+            <div class="col-4 "><button type="button" class="btn btn-outline-secondary btn-block" data-dismiss="modal">{{cancelText}}</button></div>
+            <div class=" col-4 ml-auto"><button id="submitForm" type="submit" class="btn btn-outline-primary btn-block " data-dismiss="">{{okText}}</button></div>
+        </form>
         </div>
-        <div class="col-sm-12">
-          <div class="line-horizontal"></div>
-        </div>
-      <div class="col-sm-12 filter-field">
-        <h5 for="amount">
-        PRICE RANGE:</h5>
-        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold; background-color:transparent">
-      		<div id="slider-range"></div>
       </div>
-      <div class="col-sm-12">
-        <div class="line-horizontal"></div>
-      </div>
-      <div class="col-sm-12 filter-field">
-              <h5>STATUS:</h5>
-              <div id="selectable" class="btn-group btn-group-justified"> <a href="#" class="btn btn-default">WITH OWNER</a> <a href="#" class="btn btn-default">IN REVIEW</a> <a href="#" class="btn btn-default">FULLY APPROVED</a> <a href="#" class="btn btn-default">EXPORTED</a> <a href="#" class="btn btn-default">PAID</a> </div>
-            </div>
-      </div>
-    </div>
-    <div class="table-responsive">
-      <table width="100%" border="1">
-        <tbody>
-          <tr>
-            <th class="mx-2"scope="col"><input type="checkbox" class="" aria-label="Checkbox row for Expense Report Selection" disabled checked></th>
-            <th scope="col">ID</th>
-            <th scope="col">DATE</th>
-            <th scope="col">TITLE</th>
-            <th scope="col">TOTAL</th>
-            <th scope="col">STATUS</th>
-          </tr>
-          <tr>
-            <td class="mx-2"><input type="checkbox" class="" aria-label="Checkbox for Expense Report Selection"></td>
-            <td class="text-center id">116510</td>
-            <td class="text-center">03/10/2017</td>
-            <td>Expense Report for Sam CEO</td>
-            <td class="amount text-right">1,027.33 USD</td>
-            <td>Draft</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" class="" aria-label="Checkbox for Expense Report Selection"></td>
-            <td class="text-center id">114490</td>
-            <td class="text-center">02/10/2017</td>
-            <td >Expense Report for Sam CEO</td>
-            <td class="amount text-right">1,627.33 USD</td>
-            <td >Draft</td>
-          </tr>
-          <tr>
-            <td class="mx-2"><input type="checkbox" class="" aria-label="Checkbox for Expense Report Selection"></td>
-            <td class="text-center id">113584</td>
-            <td class="text-center">01/08/2017</td>
-            <td>Sam CEO Dec 2016</td>
-            <td class="amount text-right">996.55 USD</td>
-            <td>Under Review</td>
-          </tr>
-          <tr>
-            <td class="mx-2"><input type="checkbox" class="" aria-label="Checkbox for Expense Report Selection"></td>
-            <td class="text-center id">111486</td>
-            <td class="text-center">12/13/2016</td>
-            <td>Sam CEO Nov CC Report</td>
-            <td class="amount text-right">1,056.69 USD</td>
-            <td>With Samuel Administrator</td>
-          </tr>
-          <tr>
-            <td class="mx-2"><input type="checkbox" class="" aria-label="Checkbox for Expense Report Selection"></td>
-            <td class="text-center id">110112</td>
-            <td class="text-center">11/29/2016</td>
-            <td>Nov Expenses</td>
-            <td class="amount text-right">1,167.50 USD</td>
-            <td>Fully Approved</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </div>
+
+
+
+
 
 
     <!-- Optional JavaScript -->
@@ -161,12 +98,26 @@ $( function() {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-    $(document).ready(function(){
-          $(".js-include").each(function(){
-            $(this).load($(this).attr('data-content'));
-          });
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
         });
+      }, false);
+    })();
     </script>
+
 
   </body>
 </html>
