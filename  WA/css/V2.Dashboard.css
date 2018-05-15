@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   color: #404040;
 }
+<<<<<<< Updated upstream
 .ep-height-fill {
   height: -webkit-fill-available;
 }
@@ -48,6 +49,9 @@ body {
   background: url(./EP-WA-Icons/svg/settings.svg) no-repeat center;
 }
 /* .ep-wrapper {
+=======
+.ep-wrapper {
+>>>>>>> Stashed changes
   min-height: 100%;
   padding-top: 61px;
 }
@@ -97,11 +101,15 @@ body {
     display: table;
     table-layout: fixed;
     width: 100%;
+<<<<<<< Updated upstream
 } */
 /* .ep-img-add {
   height: 1.25rem;
   background: url(/images/icons/add-nc.svg) no-repeat center;
 } */
+=======
+}
+>>>>>>> Stashed changes
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
