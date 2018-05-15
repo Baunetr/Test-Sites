@@ -2,7 +2,8 @@
 /* CSS Document */
 body {
   padding: 0;
-  background-color: #EEE;
+  padding-top: 71px;
+  background-color: #eeeeee;
   height: 100%;
   line-height: 1.42857143;
   margin: 0;
@@ -10,6 +11,41 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: #404040;
+}
+.ep-height-fill {
+  height: -webkit-fill-available;
+}
+.ep-left-sidebar {
+    max-width: 229px;
+    border-right: 1px solid #e3e3e3;
+}
+.navbar.ep-left-sidebar {
+  padding: 0px;
+}
+.ep-toggler {
+  width: 10px;
+  margin-left: -1px;
+}
+.ep-top-nav {
+  border-bottom: 1px solid #e6e5e5;
+}
+.ep-top-nav .navbar-brand {
+  padding: 0;
+}
+.ep-icon {
+  width: 1.5rem;
+}
+.ep-notifications {
+  height: 1.5rem;
+  background: url(../EP-WA-Icons/svg/settings.svg) no-repeat center;
+}
+.ep-icon-widgetAdd {
+  height: 1.5rem;
+  background: url(../EP-WA-Icons/svg/app.svg) no-repeat center;
+}
+.ep-icon-settings {
+  height: 1.5rem;
+  background: url(./EP-WA-Icons/svg/settings.svg) no-repeat center;
 }
 /* .ep-wrapper {
   min-height: 100%;
@@ -30,11 +66,7 @@ body {
     margin-right: 20px;
 }
 
-.ep-icons-nav>li.dropdown>a .ep-icon {
-  font-size: 1.846rem;
-  vertical-align: middle;
-  color: #737373;
-}
+
 .ep-fixed-sidebar .ep-left-sidebar {
     height: 100%;
     margin-top: 61px;
@@ -43,15 +75,8 @@ body {
     top: 0;
     bottom: 0;
     z-index: 1029;
-}
-.ep-left-sidebar {
-    background-color: #f5f5f5;
-    width: 230px;
-    left: 0;
-    position: absolute;
-    border-right: 1px solid #e3e3e3;
-}
-.ep-content {
+} */
+/* .ep-content {
   position: relative;
   left: 0;
   margin-left: 230px;
@@ -73,6 +98,10 @@ body {
     table-layout: fixed;
     width: 100%;
 } */
+/* .ep-img-add {
+  height: 1.25rem;
+  background: url(/images/icons/add-nc.svg) no-repeat center;
+} */
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -85,10 +114,10 @@ body {
 
 }
 /* tighten up header image and margin/padding */
-.grid-4{
+/* .grid-4{
 	margin-bottom:0px;
 	height: 65px;
-}
+} */
 
 #nav-1{
 	opacity:1.0;
@@ -135,11 +164,11 @@ transform: scale(1.05);
 filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',M11=0, M12=-0, M21=0, M22=2);
 }
 
-.logoAndTopNav .grid-4 img{
+/* .logoAndTopNav .grid-4 img{
 	height: 65px;
-}
+} */
 /* alter main navbar look */
-.navigation-container group{
+/* .navigation-container group{
 	background-color: #039ce8;
     padding-top: 0px;
 }
@@ -163,12 +192,12 @@ ul.dropdown ul a {
 
 .container-wrapper .group {
     border-top: 3px solid #fff;
-}
+} */
 
 /*CSS Changes for Other Page Elements*/
 
 /*change color for quick veiw blocks*/
-.block-value {
+/* .block-value {
 	color: #f16924;
     background-color: #3c3c3c;
 }
@@ -177,4 +206,4 @@ ul.dropdown ul a {
 	font-size:1.1em;
 	    color: #fff;
     background-color: #3c3c3c;
-}
+} */
