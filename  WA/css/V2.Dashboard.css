@@ -12,7 +12,6 @@ body {
   font-weight: 400;
   color: #404040;
 }
-<<<<<<< Updated upstream
 .ep-height-fill {
   height: -webkit-fill-available;
 }
@@ -24,8 +23,16 @@ body {
   padding: 0px;
 }
 .ep-toggler {
-  width: 10px;
-  margin-left: -1px;
+  width: 5px;
+  height: 100%;
+}
+.ep-toggler .btn {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 5px;
 }
 .ep-top-nav {
   border-bottom: 1px solid #e6e5e5;
@@ -48,10 +55,7 @@ body {
   height: 1.5rem;
   background: url(./EP-WA-Icons/svg/settings.svg) no-repeat center;
 }
-/* .ep-wrapper {
-=======
 .ep-wrapper {
->>>>>>> Stashed changes
   min-height: 100%;
   padding-top: 61px;
 }
@@ -69,8 +73,6 @@ body {
 .ep-top-header .ep-icons-nav {
     margin-right: 20px;
 }
-
-
 .ep-fixed-sidebar .ep-left-sidebar {
     height: 100%;
     margin-top: 61px;
@@ -79,7 +81,7 @@ body {
     top: 0;
     bottom: 0;
     z-index: 1029;
-} */
+}
 /* .ep-content {
   position: relative;
   left: 0;
@@ -101,15 +103,11 @@ body {
     display: table;
     table-layout: fixed;
     width: 100%;
-<<<<<<< Updated upstream
 } */
 /* .ep-img-add {
   height: 1.25rem;
   background: url(/images/icons/add-nc.svg) no-repeat center;
 } */
-=======
-}
->>>>>>> Stashed changes
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
