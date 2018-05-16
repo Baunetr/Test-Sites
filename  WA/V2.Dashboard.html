@@ -83,8 +83,8 @@
     </nav>
     <div class="container-fluid">
       <div class="row ep-wrapper flex-nowrap">
-        <nav class="navbar bg-light navbar-light col ep-left-sidebar py-5">
-          <ul class="navbar-nav flex-column ep-height-fill">
+        <nav class=" bg-light navbar-light col ep-left-sidebar py-5">
+          <ul class="navbar-nav flex-column ">
             <li class="nav-item active">
               <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
             </li>
@@ -105,23 +105,174 @@
         </div>
         <div class="col ep-content py-4">
           <div class="main-content container-fluid">
-            <div class="row justify-content-around">
-              <div class="col-auto">
-                <div class="card">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="card mb-4">
                   <div class="card-header">
-                    <div class="">
-                      Unattached Expenses
+                    <div class="title">
+                      Credit Cards
                     </div>
-                    <div class="ep-badge-count">
-                      8
+                    <div class="row ep-badge-count">
+                      <div class="">
+                        3
+                      </div>
+                      <div class="text-danger">
+                        *
+                      </div>
                     </div>
                   </div>
                   <div class="card-body scrollX d-flex flex-nowrap">
                     <div class="card ep-card-w1">
                       <div class="card-body">
-                        <h5 class="card-title">ER# 124556</h5>
-                        <p class="card-text">With supporting text below as a natural</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="car-title">
+                          Pams Corp Card
+                        </div>
+                        <div class="card-text">
+                          <ul>
+                            <li>Last Synced: 8 hrs ago </li>
+                            <li>8 Transactions ready to expense</li>
+                          </ul>
+                          <a href="#" class="btn btn-secondary btn-block">Manage Card</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card ep-card-w1 ml-4 border-warning">
+                      <div class="card-body">
+                        <div class="car-title">
+                          Old Corp Card
+                        </div>
+                        <div class="card-text">
+                          <ul>
+                            <li>Last Synced: 20 days ago </li>
+                            <li class="text-warning">Credentials issue</li>
+                          </ul>
+                          <a href="#" class="btn btn-warning btn-block">Manage Card</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card ep-card-w1 ml-4 border-danger">
+                      <div class="card-body">
+                        <div class="car-title">
+                           Corp Card #1
+                        </div>
+                        <div class="card-text">
+                          <ul>
+                            <li>Last Synced: 3 Months ago </li>
+                            <li class="text-danger">Expired</li>
+                          </ul>
+                          <a href="#" class="btn btn-secondary btn-block">Manage Card</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="card card-table mb-4">
+                  <div class="card-header">
+                    <div class="title">
+                      Actions
+                    </div>
+                    <div class="ep-badge-count">
+                      2
+                    </div>
+                  </div>
+                  <div class="card-body table-responsive">
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th>ER #</th>
+                          <th>User</th>
+                          <th>Description</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>143256</td>
+                          <td>Pam Pam</td>
+                          <td>Reimburse Expenses</td>
+                          <td>05/06/2018</td>
+                        </tr>
+                        <tr>
+                          <td>153678</td>
+                          <td>Sam CEO</td>
+                          <td>Approve Expense</td>
+                          <td>05/10/2018</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="widget widget-tile">
+                  Proxies
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card card-table mb-4">
+                  <div class="card-header">
+                    <div class="title">
+                      Unattached Expenses
+                    </div>
+                    <div class="ep-badge-count">
+                      4
+                    </div>
+                  </div>
+                  <div class="card-body table-responsive">
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th>Description</th>
+                          <th></th>
+                          <th>Amount</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>143256</td>
+                          <td>Pam Pam</td>
+                          <td>Reimburse Expenses</td>
+                          <td>05/06/2018</td>
+                        </tr>
+                        <tr>
+                          <td>153678</td>
+                          <td>Sam CEO</td>
+                          <td>Approve Expense</td>
+                          <td>05/10/2018</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                 </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card mb-4">
+                  <div class="card-header" data-toggle="tooltip" data-placement="bottom" title="See All">
+                    <div class="text-center">
+                      Draft Reports
+                    </div>
+                    <div class="ep-badge-count">
+                      3
+                    </div>
+                  </div>
+                  <div class="card-body scrollX d-flex flex-nowrap">
+                    <div class="card ep-card-w1">
+                      <div class="card-header text-center">
+                        Create New ER
+                      </div>
+                      <div class="card-body">
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ER Title">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Description">
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-block">Create</button>
+                        </form>
                       </div>
                     </div>
                     <div class="card ep-card-w1 ml-4">
@@ -138,10 +289,44 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                       </div>
                     </div>
-                    <div class="card ep-card-w1 ml-4">
+                    <div class="card ep-card-w1 mx-4">
                       <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text  </p>
+                        <h5 class="card-title">ER# 124556</h5>
+                        <p class="card-text">With supporting text below as a natural</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card  mb-4">
+                  <div class="card-header">
+                    <div class="text-center">
+                      Report Activity Chain
+                    </div>
+                    <div class="ep-badge-count">
+                      3
+                    </div>
+                  </div>
+                  <div class="card-body scrollX d-flex flex-nowrap">
+                    <div class="card ep-card-w2">
+                      <div class="card-body">
+                        <h5 class="card-title">ER# 456231</h5>
+
+                      </div>
+                    </div>
+                    <div class="card ep-card-w2 ml-4">
+                      <div class="card-body">
+                        <h5 class="card-title">ER# 236790</h5>
+                        <p class="card-text">With supporting text below </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                    <div class="card ep-card-w2 ml-4">
+                      <div class="card-body">
+                        <h5 class="card-title">ER# 3546138</h5>
+                        <p class="card-text">With supporting text below as a </p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                       </div>
                     </div>
@@ -150,41 +335,14 @@
               </div>
               <div class="col-auto">
                 <div class="card ep-card-w1">
-                   <div class="card-body">
-                     <h5 class="card-title">Special title treatment</h5>
-                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                     <a href="#" class="btn btn-primary">Go somewhere</a>
-                   </div>
-                 </div>
-                <!-- <div class="widget widget-tile">
-                  Draft Reports
-                </div> -->
-              </div>
-              <div class="col-auto">
-                <div class="card ep-card-w2">
-                   <div class="card-body">
-                     <h5 class="card-title">Special title treatment</h5>
-                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                     <a href="#" class="btn btn-primary">Go somewhere</a>
-                   </div>
-                 </div>
-                <!-- <div class="widget widget-tile">
-                  Actions
-                </div> -->
-              </div>
-              <div class="col-auto">
-                <div class="widget widget-tile">
-                  Proxies
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="widget widget-tile">
-                  Credit Cards
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="widget widget-tile">
-                  Historical
+                  <div class="card-header text-center">
+                    Historical
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -325,7 +483,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- jQuery EP -->
-        <script type="text/javascript" src="./js/new-header.js"></script>
+        <script type="text/javascript" src="./js/V2.Dashboard.js"></script>
 
    </body>
  </html>
