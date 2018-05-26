@@ -25,6 +25,9 @@ $(window).scroll(function() {
 
     }
 });
+$(function (toggleSideBar(evt) {
+  var target = $(evt);
+});
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
