@@ -13,7 +13,7 @@
 
     <title>gridstack.js</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <!-- <link href="freelancer/css/freelancer.css" rel="stylesheet"> -->
@@ -33,8 +33,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.css" /> -->
-    <link href="http://gridstackjs.com/dist/gridstack.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.css" />
+    <!-- <link href="http://gridstackjs.com/dist/gridstack.css" rel="stylesheet"> -->
     <link href="./css/V1.gridstack.css" rel="stylesheet">
 </head>
 
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
+            <div class="grid-stack mb-4" data-gs-width="12" data-gs-animate="yes">
                 <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">1</div></div>
                 <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"><div class="grid-stack-item-content">2</div></div>
                 <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"><div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div></div>
@@ -185,14 +185,12 @@ $(function () {
         </a>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+
+
+
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
     <script src="./js/V1.Gridstack.js"></script>
     <!-- <script src="freelancer/js/classie.js"></script>
     <script src="freelancer/js/cbpAnimatedHeader.js"></script> -->
@@ -201,25 +199,39 @@ $(function () {
 
     <!-- Custom Theme JavaScript -->
     <!-- <script src="freelancer/js/freelancer.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.0/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.jQueryUI.min.js'></script>
 
-    <!-- <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.js'></script>
-    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.jQueryUI.min.js'></script> -->
-
-    <script src="http://gridstackjs.com/dist/gridstack.js"></script>
-    <script src="http://gridstackjs.com/dist/gridstack.jQueryUI.js"></script>
+    <!-- <script src="http://gridstackjs.com/dist/gridstack.js"></script>
+    <script src="http://gridstackjs.com/dist/gridstack.jQueryUI.js"></script> -->
     <script type="text/javascript">
         hljs.initHighlightingOnLoad();
         $(function () {
-            $('.grid-stack').gridstack({
-                width: 12,
-                alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-                resizable: {
-                    handles: 'e, se, s, sw, w'
-                }
-            });
+          var options = {
+              width: 12,
+              alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+              resizable: {
+                  handles: 'e, se, s, sw, w'
+              }
+          };
+          $('.grid-stack').gridstack(options);
         });
+        // $(function () {
+        //     $('.grid-stack').gridstack({
+        //         width: 12,
+        //         alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+        //         resizable: {
+        //             handles: 'e, se, s, sw, w'
+        //         }
+        //     });
+        // });
     </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
