@@ -79,104 +79,106 @@
         <!-- /.container-fluid -->
     </nav>
 
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <span class="name">gridstack.js</span>
-                        <hr class="star-light">
-                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column
-                        grid. It allows you to build draggable responsive bootstrap v3 friendly layouts.
-                        It also works great with <a href="http://knockoutjs.com">knockout.js</a> and touch devices.</p>
-
-                        <p>Inspired by <a href="http://gridster.net">gridster.js</a>. Built with love.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <section id="demo" class="darklue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Demo</h2>
-                    <hr class="star-light">
+      <div class="container py-4">
+        <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
+          <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content">
+              <div class="text-center">
+                <h1>Welcome Card</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4">
+            <div class="grid-stack-item-content">
+              <div class="text-center">
+                <h1>History Card</h1>
+              </div>
+            </div>
+          </div>
+          <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"><div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div></div>
+          <div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">
+            <div class="card mb-4">
+              <div class="card-header">
+                <div class="title">
+                  Credit Cards
                 </div>
-            </div>
-
-            <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
-                <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">1</div></div>
-                <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"><div class="grid-stack-item-content">2</div></div>
-                <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"><div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div></div>
-                <div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">4</div></div>
-                <div class="grid-stack-item" data-gs-x="0" data-gs-y="2" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">5</div></div>
-                <div class="grid-stack-item" data-gs-x="2" data-gs-y="2" data-gs-width="2" data-gs-height="4"><div class="grid-stack-item-content">6</div></div>
-                <div class="grid-stack-item" data-gs-x="8" data-gs-y="2" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">7</div></div>
-                <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">8</div></div>
-                <div class="grid-stack-item" data-gs-x="4" data-gs-y="4" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">9</div></div>
-                <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">10</div></div>
-                <div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">11</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="usage">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Usage</h2>
-                    <hr class="star-primary">
+                <div class="row ep-badge-count">
+                  <div class="">
+                    3
+                  </div>
+                  <div class="text-danger">
+                    *
+                  </div>
                 </div>
-            </div>
-
-            <h3>Basic Usage</h3>
-
-            <pre><code class="html">
-&lt;div class=&quot;grid-stack&quot;&gt;
-    &lt;div class=&quot;grid-stack-item&quot;
-        data-gs-x=&quot;0&quot; data-gs-y=&quot;0&quot;
-        data-gs-width=&quot;4&quot; data-gs-height=&quot;2&quot;&gt;
-            &lt;div class=&quot;grid-stack-item-content&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;grid-stack-item&quot;
-        data-gs-x=&quot;4&quot; data-gs-y=&quot;0&quot;
-        data-gs-width=&quot;4&quot; data-gs-height=&quot;4&quot;&gt;
-            &lt;div class=&quot;grid-stack-item-content&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(function () {
-    var options = {
-        cellHeight: 80,
-        verticalMargin: 10
-    };
-    $('.grid-stack').gridstack(options);
-});
-&lt;/script&gt;
-            </code></pre>
-
-            <p>For more samples and documentation please visit <a href="https://github.com/gridstack/gridstack.js">https://github.com/gridstack/gridstack.js</a>.</p>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Pavel Reznikov 2014
+              </div>
+              <div class="card-body scrollX d-flex flex-nowrap">
+                <div class="card ep-card-w1">
+                  <div class="card-body">
+                    <div class="car-title">
+                      Pams Corp Card
                     </div>
+                    <div class="card-text">
+                      <ul>
+                        <li>Last Synced: 8 hrs ago </li>
+                        <li>8 Transactions ready to expense</li>
+                      </ul>
+                      <a href="#" class="btn btn-secondary btn-block">Manage Card</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="card ep-card-w1 ml-4 border-warning">
+                  <div class="card-body">
+                    <div class="car-title">
+                      Old Corp Card
+                    </div>
+                    <div class="card-text">
+                      <ul>
+                        <li>Last Synced: 20 days ago </li>
+                        <li class="text-warning">Credentials issue</li>
+                      </ul>
+                      <a href="#" class="btn btn-warning btn-block">Manage Card</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card ep-card-w1 ml-4 border-danger">
+                  <div class="card-body">
+                    <div class="car-title">
+                       Corp Card #1
+                    </div>
+                    <div class="card-text">
+                      <ul>
+                        <li>Last Synced: 3 Months ago </li>
+                        <li class="text-danger">Expired</li>
+                      </ul>
+                      <a href="#" class="btn btn-secondary btn-block">Manage Card</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div></div>
+          <div class="grid-stack-item" data-gs-x="0" data-gs-y="2" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div></div></div>
+          <div class="grid-stack-item" data-gs-x="2" data-gs-y="2" data-gs-width="2" data-gs-height="4"><div class="grid-stack-item-content">6</div></div>
+          <div class="grid-stack-item" data-gs-x="8" data-gs-y="2" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">7</div></div>
+          <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">8</div></div>
+          <div class="grid-stack-item" data-gs-x="4" data-gs-y="4" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">9</div></div>
+          <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">10</div></div>
+          <div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">11</div></div>
         </div>
-    </footer>
+      </div>
+    </section>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visble-sm">
